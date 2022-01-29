@@ -1,10 +1,11 @@
 import React from 'react';
-import FaceAuthScreen from './screens/FaceAuthScreen';
-import SignInScreen from './screens/SignInScreen';
+import CreateAccountScreen from './screens/CreateAccountScreen';
+// import FaceAuthScreen from './screens/FaceAuthScreen';
+// import SignInScreen from './screens/SignInScreen';
 // import SplashScreen from './screens/SplashScreen';
 
 const App = () => {
-  return <FaceAuthScreen />;
+  return <CreateAccountScreen />;
 };
 
 export default App;

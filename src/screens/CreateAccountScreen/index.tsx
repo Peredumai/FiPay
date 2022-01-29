@@ -13,7 +13,7 @@ import styles from './style';
 import Button from './../../components/Button/index';
 import {THEME} from '../../theme';
 
-const SignInScreen = () => {
+const CreateAccountScreen = () => {
   return (
     <View style={styles.container}>
       <Image
@@ -23,9 +23,14 @@ const SignInScreen = () => {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.innerContainer}>
           <View style={styles.textContainer}>
-            <Text style={styles.firstText}>Sign in to </Text>
-            <Text style={styles.secondText}>FiPay</Text>
+            <Text style={styles.headerText}>Create a new account</Text>
           </View>
+
+          <View style={styles.row}>
+            <Text style={styles.topInputText}>Full Name</Text>
+            <Image source={require('../../../assets/images/star.png')} />
+          </View>
+          <TextInput style={styles.emailInput} />
 
           <View style={styles.row}>
             <Text style={styles.topInputText}>Email or Phone Number</Text>
@@ -45,24 +50,27 @@ const SignInScreen = () => {
                 true: THEME.PURPLE_COLOR,
                 false: THEME.PURPLE_COLOR,
               }}
-              // value={true}
+              //   value={true}
               style={styles.checkBox}
             />
-            <Text style={styles.label}>Remember me</Text>
+            <View>
+              <Text style={styles.label}>
+                By creating an account, you agree to our
+              </Text>
+              <TouchableOpacity style={styles.haveNotAccountOpacity}>
+                <Text style={styles.labelPurple}>Term and Conditions</Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
-          <Button text="Sign in" />
-
-          <TouchableOpacity style={styles.forgotOpacity}>
-            <Text style={styles.forgotText}>Forgot the password?</Text>
-          </TouchableOpacity>
+          <Button text="Create Account" />
 
           <View style={styles.haveNotAccountContainer}>
             <Text style={styles.haveNotAccountContainerText}>
-              Don’t have an account?
+              Already have an account?
             </Text>
-            <TouchableOpacity style={styles.haveNotAccountOpacity}>
-              <Text style={styles.haveNotAccountText}>&nbsp; Sign up</Text>
+            <TouchableOpacity>
+              <Text style={styles.haveNotAccountText}>&nbsp;Sign in</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -71,4 +79,4 @@ const SignInScreen = () => {
   );
 };
 
-export default SignInScreen;
+export default CreateAccountScreen;

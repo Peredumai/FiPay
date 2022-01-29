@@ -37,48 +37,36 @@ const styles = EStyleSheet.create({
     marginBottom: '2.5rem',
   },
   checkBox: {
-    borderWidth: 0,
     marginRight: '0.75rem',
-    transform: [{scaleX: 0.9}, {scaleY: 0.9}],
+    transform: [{scaleX: 0.9}, {scaleY: 0.9}, {translateY: -6}],
     color: THEME.PURPLE_COLOR,
   },
   checkBoxContainer: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     marginBottom: '1.25rem',
     transform: [{translateX: -6}],
   },
-  firstText: {
+  headerText: {
     fontSize: '2.063rem',
     color: '#394452',
     fontFamily: THEME.BOLD_FONT,
   },
-  secondText: {
-    fontSize: '2.063rem',
-    color: THEME.PURPLE_COLOR,
-    fontFamily: THEME.BOLD_FONT,
-  },
   label: {
     fontSize: 14,
-    fontFamily: THEME.BOLD_FONT,
-    color: '#2C3A4B',
+    fontFamily: 'Avenir-Regular',
+    color: '#858C94',
+  },
+  labelPurple: {
+    fontSize: 14,
+    fontFamily: 'Avenir-Regular',
+    color: THEME.PURPLE_COLOR,
   },
   topInputText: {
     fontSize: '1rem',
     fontFamily: THEME.BOLD_FONT,
     color: '#2C3A4B',
     marginLeft: '1rem',
-  },
-  forgotText: {
-    fontSize: 16,
-    fontFamily: THEME.BOLD_FONT,
-    color: THEME.PURPLE_COLOR,
-  },
-  forgotOpacity: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '1.25rem',
-    alignSelf: 'center',
   },
   haveNotAccountContainer: {
     flexDirection: 'row',
@@ -97,6 +85,9 @@ const styles = EStyleSheet.create({
   },
   row: {
     flexDirection: 'row',
+  },
+  haveNotAccountOpacity: {
+    width: '8.4rem',
   },
 });
 EStyleSheet.build();

@@ -26,6 +26,8 @@
 		431FC1AD1C5D4F4C9EC89BA8 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 628DC36F7B2C4421AB80139C /* SourceSansPro-Regular.ttf */; };
 		EB575540C9324A40A6FB489A /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8330037C37234DFDB3C7BDA3 /* SourceSansPro-SemiBold.ttf */; };
 		42555D8CE1DF4518B0265E90 /* SourceSansPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18D054F0D4B14AB9B659F46F /* SourceSansPro-SemiBoldItalic.ttf */; };
+		9311793D40AE4FB6BC70EE3B /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB251D7E95D14A8C936E2E9F /* Metropolis-Regular.otf */; };
+		4ABBB56AA34E4C09B5F41835 /* Avenir-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C5BAF009D564BBAA4A49791 /* Avenir-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		628DC36F7B2C4421AB80139C /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-Regular.ttf"; path = "../assets/fonts/SourceSansPro-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		8330037C37234DFDB3C7BDA3 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-SemiBold.ttf"; path = "../assets/fonts/SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		18D054F0D4B14AB9B659F46F /* SourceSansPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "SourceSansPro-SemiBoldItalic.ttf"; path = "../assets/fonts/SourceSansPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB251D7E95D14A8C936E2E9F /* Metropolis-Regular.otf */ = {isa = PBXFileReference; name = "Metropolis-Regular.otf"; path = "../assets/fonts/Metropolis-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C5BAF009D564BBAA4A49791 /* Avenir-Regular.ttf */ = {isa = PBXFileReference; name = "Avenir-Regular.ttf"; path = "../assets/fonts/Avenir-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 				628DC36F7B2C4421AB80139C /* SourceSansPro-Regular.ttf */,
 				8330037C37234DFDB3C7BDA3 /* SourceSansPro-SemiBold.ttf */,
 				18D054F0D4B14AB9B659F46F /* SourceSansPro-SemiBoldItalic.ttf */,
+				DB251D7E95D14A8C936E2E9F /* Metropolis-Regular.otf */,
+				1C5BAF009D564BBAA4A49791 /* Avenir-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -302,6 +308,8 @@
 				431FC1AD1C5D4F4C9EC89BA8 /* SourceSansPro-Regular.ttf in Resources */,
 				EB575540C9324A40A6FB489A /* SourceSansPro-SemiBold.ttf in Resources */,
 				42555D8CE1DF4518B0265E90 /* SourceSansPro-SemiBoldItalic.ttf in Resources */,
+				9311793D40AE4FB6BC70EE3B /* Metropolis-Regular.otf in Resources */,
+				4ABBB56AA34E4C09B5F41835 /* Avenir-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
