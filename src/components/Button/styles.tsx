@@ -1,17 +1,17 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
-import {THEME} from '../../../android/app/src/theme';
+import {THEME} from '../../theme';
 
 const styles = EStyleSheet.create({
   touchableOpacity: {
     backgroundColor: THEME.PURPLE_COLOR,
     borderRadius: '0.5rem',
-    width: '23.75rem',
     height: '3.438rem',
     justifyContent: 'center',
     alignItems: 'center',
+    alignSelf: 'stretch',
   },
   text: {
-    fontFamily: 'SourceSansPro-SemiBold',
+    fontFamily: THEME.BOLD_FONT,
     fontSize: '1.125rem',
     color: THEME.WHITE_COLOR,
   },

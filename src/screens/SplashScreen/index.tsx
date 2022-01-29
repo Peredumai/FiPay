@@ -10,8 +10,8 @@ const SplashScreen = () => {
         style={styles.backgroundImage}
         source={require('../../../assets/images/Splash.png')}
       />
-      <View style={styles.textContainer}>
-        <View style={styles.inner}>
+      <View>
+        <View>
           <Text style={styles.welcomeText}>Welcome</Text>
         </View>
         <View style={styles.inner}>
@@ -19,11 +19,11 @@ const SplashScreen = () => {
             FiPay: The best multifunctional digital E-Wallet of this century.
           </Text>
         </View>
+        <Button text="Sign in" />
+        <TouchableOpacity style={styles.createButton}>
+          <Text style={styles.createButtonText}>Create an account</Text>
+        </TouchableOpacity>
       </View>
-      <Button text="Sign in" />
-      <TouchableOpacity style={styles.createButton}>
-        <Text style={styles.createButtonText}>Create an account</Text>
-      </TouchableOpacity>
     </View>
   );
 };
