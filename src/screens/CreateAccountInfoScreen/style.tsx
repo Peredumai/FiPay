@@ -7,7 +7,7 @@ const styles = EStyleSheet.create({
     paddingHorizontal: '1.5rem',
     backgroundColor: THEME.WHITE_COLOR,
   },
-  emailInput: {
+  countryInput: {
     alignSelf: 'stretch',
     borderWidth: 1,
     borderColor: '#A5ABB3',
@@ -16,11 +16,9 @@ const styles = EStyleSheet.create({
     marginBottom: '1.25rem',
     height: '3rem',
     paddingHorizontal: '1rem',
-    fontSize: '1rem',
-    fontFamily: THEME.BOLD_FONT,
-    color: '#09101D',
+    paddingVertical: 12,
   },
-  passwordInput: {
+  stateInput: {
     alignSelf: 'stretch',
     borderWidth: 1,
     borderColor: '#A5ABB3',
@@ -28,12 +26,9 @@ const styles = EStyleSheet.create({
     marginTop: '0.5rem',
     marginBottom: '1.25rem',
     height: '3rem',
-    paddingHorizontal: '1rem',
-    fontSize: '1rem',
-    fontFamily: THEME.BOLD_FONT,
-    color: '#09101D',
+    width: 175,
   },
-  fullNameInput: {
+  cityInput: {
     alignSelf: 'stretch',
     borderWidth: 1,
     borderColor: '#A5ABB3',
@@ -41,10 +36,18 @@ const styles = EStyleSheet.create({
     marginTop: '0.5rem',
     marginBottom: '1.25rem',
     height: '3rem',
+    width: 175,
     paddingHorizontal: '1rem',
-    fontSize: '1rem',
-    fontFamily: THEME.BOLD_FONT,
-    color: '#09101D',
+  },
+  streetInput: {
+    alignSelf: 'stretch',
+    borderWidth: 1,
+    borderColor: '#A5ABB3',
+    borderRadius: '0.5rem',
+    marginTop: '0.5rem',
+    marginBottom: '1.25rem',
+    paddingHorizontal: '1rem',
+    height: '3rem',
   },
   innerContainer: {
     flex: 1,
@@ -110,8 +113,9 @@ const styles = EStyleSheet.create({
   haveNotAccountOpacity: {
     width: '8.4rem',
   },
-  keyboardAvoid: {
-    flex: 1,
+  rowBetween: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
 });
 EStyleSheet.build();

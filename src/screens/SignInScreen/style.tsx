@@ -15,6 +15,10 @@ const styles = EStyleSheet.create({
     marginTop: '0.5rem',
     marginBottom: '1.25rem',
     height: '3rem',
+    paddingHorizontal: '1rem',
+    fontSize: '1rem',
+    fontFamily: THEME.BOLD_FONT,
+    color: '#09101D',
   },
   passwordInput: {
     alignSelf: 'stretch',
@@ -24,6 +28,10 @@ const styles = EStyleSheet.create({
     marginTop: '0.5rem',
     marginBottom: '1.25rem',
     height: '3rem',
+    paddingHorizontal: '1rem',
+    fontSize: '1rem',
+    fontFamily: THEME.BOLD_FONT,
+    color: '#09101D',
   },
   innerContainer: {
     flex: 1,

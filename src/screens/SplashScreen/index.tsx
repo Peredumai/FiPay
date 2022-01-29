@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './style';
 import Button from './../../components/Button/index';
 
-const SplashScreen = () => {
+const SplashScreen = (props) => {
   return (
     <View style={styles.container}>
       <Image
@@ -19,8 +19,13 @@ const SplashScreen = () => {
             FiPay: The best multifunctional digital E-Wallet of this century.
           </Text>
         </View>
-        <Button text="Sign in" />
-        <TouchableOpacity style={styles.createButton}>
+        <Button
+          onPress={() => props.navigation.navigate('SignIn')}
+          text="Sign in"
+        />
+        <TouchableOpacity
+          onPress={() => props.navigation.navigate('CreateAccount')}
+          style={styles.createButton}>
           <Text style={styles.createButtonText}>Create an account</Text>
         </TouchableOpacity>
       </View>

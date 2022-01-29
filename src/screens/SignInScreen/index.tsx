@@ -13,7 +13,7 @@ import styles from './style';
 import Button from './../../components/Button/index';
 import {THEME} from '../../theme';
 
-const SignInScreen = () => {
+const SignInScreen = props => {
   return (
     <View style={styles.container}>
       <Image
@@ -53,7 +53,9 @@ const SignInScreen = () => {
 
           <Button text="Sign in" />
 
-          <TouchableOpacity style={styles.forgotOpacity}>
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('ForgotPassword')}
+            style={styles.forgotOpacity}>
             <Text style={styles.forgotText}>Forgot the password?</Text>
           </TouchableOpacity>
 
@@ -61,7 +63,11 @@ const SignInScreen = () => {
             <Text style={styles.haveNotAccountContainerText}>
               Don’t have an account?
             </Text>
-            <TouchableOpacity style={styles.haveNotAccountOpacity}>
+            <TouchableOpacity
+              onPress={() => {
+                props.navigation.navigate('CreateAccount');
+              }}
+              style={styles.haveNotAccountOpacity}>
               <Text style={styles.haveNotAccountText}>&nbsp; Sign up</Text>
             </TouchableOpacity>
           </View>
