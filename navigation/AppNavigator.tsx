@@ -3,14 +3,15 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 // import NewPasswordScreen from '../src/screens/NewPasswordScreen';
-import CreateAccountScreen from '../src/screens/CreateAccountScreen';
 // import FaceAuthScreen from '../src/screens/FaceAuthScreen';
-import SignInScreen from '../src/screens/SignInScreen';
 // import VerificationCodeScreen from '../src/screens/VerificationCodeScreen';
-import SplashScreen from '../src/screens/SplashScreen';
 // import CreateAccountInfoScreen from '../src/screens/CreateAccountInfoScreen/index';
-import ForgotPasswordScreen from '../src/screens/ForgotPasswordScreen/index';
 // import SuccessfulScreen from '../src/screens/SuccesfulScreen/index';
+import HomeScreen from '../src/screens/BottomTabScreens/AddScreen';
+import CreateAccountScreen from '../src/screens/SignScreens/CreateAccountScreen';
+import ForgotPasswordScreen from '../src/screens/SignScreens/ForgotPasswordScreen';
+import SplashScreen from '../src/screens/SignScreens/SplashScreen';
+import SignInScreen from '../src/screens/SignScreens/SignInScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,11 @@ function appNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name="Splash"
           component={SplashScreen}

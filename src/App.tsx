@@ -1,5 +1,7 @@
 import React from 'react';
-import AppNavigator from '../navigation/AppNavigator';
+// import AppNavigator from '../navigation/AppNavigator';
+import Tabs from '../navigation/TabNavigator';
+
 // import NewPasswordScreen from './screens/NewPasswordScreen';
 // import CreateAccountScreen from './screens/CreateAccountScreen';
 // import FaceAuthScreen from './screens/FaceAuthScreen';
@@ -11,7 +13,7 @@ import AppNavigator from '../navigation/AppNavigator';
 // import SuccessfulScreen from './screens/SuccesfulScreen/index';
 
 const App = () => {
-  return <AppNavigator />;
+  return <Tabs />;
 };
 
 export default App;

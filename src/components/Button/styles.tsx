@@ -1,5 +1,5 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
-import {THEME} from '../../theme';
+import {THEME} from './../../theme';
 
 const styles = EStyleSheet.create({
   touchableOpacity: {
