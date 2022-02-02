@@ -5,12 +5,16 @@ import styles from './styles';
 interface IButtonProps {
   text: string;
   onPress?: () => any;
+  disabled: boolean;
 }
 
-const Button = ({text, onPress}: IButtonProps) => {
+const Button = ({text, onPress, disabled}: IButtonProps) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.touchableOpacity}>
-      <Text style={styles.text}>{text}</Text>
+    <TouchableOpacity
+      disabled={disabled}
+      onPress={onPress}
+      style={[styles.touchableOpacity, disabled && styles.disabled]}>
+      <Text style={[styles.text, disabled && styles.disabledText]}>{text}</Text>
     </TouchableOpacity>
   );
 };

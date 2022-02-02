@@ -1,9 +1,20 @@
 import {View, Text, Image, TouchableOpacity} from 'react-native';
-import React from 'react';
+import React, {useCallback} from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
+import {useNavigation} from '@react-navigation/native';
 
-const SplashScreen = (props) => {
+const SplashScreen = () => {
+  const navigation = useNavigation();
+
+  const signIn = useCallback(() => {
+    navigation.navigate('SignIn' as any);
+  }, [navigation]);
+
+  const createAccount = useCallback(() => {
+    navigation.navigate('CreateAccount' as any);
+  }, [navigation]);
+
   return (
     <View style={styles.container}>
       <Image
@@ -19,13 +30,8 @@ const SplashScreen = (props) => {
             FiPay: The best multifunctional digital E-Wallet of this century.
           </Text>
         </View>
-        <Button
-          onPress={() => props.navigation.navigate('SignIn')}
-          text="Sign in"
-        />
-        <TouchableOpacity
-          onPress={() => props.navigation.navigate('CreateAccount')}
-          style={styles.createButton}>
+        <Button onPress={signIn} text="Sign in" />
+        <TouchableOpacity onPress={createAccount} style={styles.createButton}>
           <Text style={styles.createButtonText}>Create an account</Text>
         </TouchableOpacity>
       </View>

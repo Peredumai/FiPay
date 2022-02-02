@@ -57,37 +57,32 @@ const styles = EStyleSheet.create({
     flexDirection: 'row',
     marginBottom: '2.5rem',
   },
-  checkBox: {
-    marginRight: '0.75rem',
-    transform: [{scaleX: 0.9}, {scaleY: 0.9}, {translateY: -6}],
-    color: THEME.PURPLE_COLOR,
-  },
-  checkBoxContainer: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    marginBottom: '1.25rem',
-    transform: [{translateX: -6}],
-  },
+  // checkBox: {
+  //   marginRight: '0.75rem',
+  //   transform: [{scaleX: 0.9}, {scaleY: 0.9}, {translateY: -6}],
+  //   color: THEME.PURPLE_COLOR,
+  // },
+  // checkBoxContainer: {
+  //   flexDirection: 'row',
+  //   alignItems: 'flex-start',
+  //   marginBottom: '1.25rem',
+  //   transform: [{translateX: -6}],
+  //   marginTop: 20,
+  // },
   headerText: {
     fontSize: '2.063rem',
     color: '#394452',
     fontFamily: THEME.BOLD_FONT,
   },
-  label: {
-    fontSize: '0.875rem',
-    fontFamily: 'Avenir-Regular',
-    color: '#858C94',
-  },
+  // label: {
+  //   fontSize: '0.875rem',
+  //   fontFamily: 'Avenir-Regular',
+  //   color: '#858C94',
+  // },
   labelPurple: {
     fontSize: '0.875rem',
     fontFamily: 'Avenir-Regular',
     color: THEME.PURPLE_COLOR,
-  },
-  topInputText: {
-    fontSize: '1rem',
-    fontFamily: THEME.BOLD_FONT,
-    color: '#2C3A4B',
-    marginLeft: '1rem',
   },
   haveNotAccountContainer: {
     flexDirection: 'row',
@@ -104,14 +99,75 @@ const styles = EStyleSheet.create({
     fontFamily: THEME.BOLD_FONT,
     color: THEME.PURPLE_COLOR,
   },
-  row: {
-    flexDirection: 'row',
-  },
   haveNotAccountOpacity: {
     width: '8.4rem',
   },
   keyboardAvoid: {
     flex: 1,
+  },
+  topInputText: {
+    fontSize: '1rem',
+    fontFamily: THEME.BOLD_FONT,
+    color: '#2C3A4B',
+    marginLeft: '1rem',
+    marginTop: 20,
+  },
+  required: {
+    lineHeight: 18,
+    fontSize: 14,
+    color: '#DA1414',
+  },
+  errorInput: {
+    borderColor: '#DA1414',
+  },
+  inputContainer: {
+    borderWidth: 1,
+    marginTop: '0.5rem',
+    borderColor: '#A5ABB3',
+    borderRadius: 8,
+    height: '3.125rem',
+  },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  textinput: {
+    height: 'auto',
+    paddingVertical: '0.75rem',
+    paddingHorizontal: '1rem',
+    borderWidth: 0,
+    flexGrow: 1,
+  },
+  icon: {
+    width: '1.5rem',
+    height: '1.5rem',
+    marginHorizontal: '0.75rem',
+  },
+  visibleControl: {
+    marginLeft: '0.75rem',
+    height: '3.125rem',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '3rem',
+  },
+  checkBox: {
+    borderWidth: 0,
+    marginRight: '0.75rem',
+    transform: [{scaleX: 0.9}, {scaleY: 0.9}],
+    color: THEME.PURPLE_COLOR,
+  },
+  checkBoxContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: '1.25rem',
+    transform: [{translateX: -6}],
+    width: 120,
+    marginTop: 22,
+  },
+  label: {
+    fontSize: 14,
+    fontFamily: THEME.BOLD_FONT,
+    color: '#2C3A4B',
   },
 });
 EStyleSheet.build();

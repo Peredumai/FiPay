@@ -28,7 +28,7 @@ const ForgotPasswordScreen = () => {
             <Image source={require('../../../../assets/images/star.png')} />
           </View>
           <TextInput style={styles.emailInput} />
-          <Button text="Create Account" />
+          <Button text="Create Account" disabled={false} />
         </View>
       </TouchableWithoutFeedback>
     </View>

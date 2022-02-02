@@ -7,42 +7,39 @@ const styles = EStyleSheet.create({
     paddingHorizontal: '1.5rem',
     backgroundColor: THEME.WHITE_COLOR,
   },
-  emailInput: {
-    alignSelf: 'stretch',
+  input: {
     borderWidth: 1,
     borderColor: '#A5ABB3',
     borderRadius: '0.5rem',
     marginTop: '0.5rem',
-    marginBottom: '1.25rem',
     height: '3rem',
     paddingHorizontal: '1rem',
     fontSize: '1rem',
     fontFamily: THEME.BOLD_FONT,
     color: '#09101D',
   },
-  passwordInput: {
-    alignSelf: 'stretch',
-    borderWidth: 1,
-    borderColor: '#A5ABB3',
-    borderRadius: '0.5rem',
-    marginTop: '0.5rem',
-    marginBottom: '1.25rem',
-    height: '3rem',
-    paddingHorizontal: '1rem',
-    fontSize: '1rem',
-    fontFamily: THEME.BOLD_FONT,
-    color: '#09101D',
+  icon: {
+    width: '1.5rem',
+    height: '1.5rem',
+    marginHorizontal: '0.75rem',
   },
   innerContainer: {
     flex: 1,
-    marginTop: '3.5rem',
   },
   logoImage: {
     marginTop: '1.65rem',
+    marginBottom: '7.5rem',
   },
   textContainer: {
     flexDirection: 'row',
-    marginBottom: '2.5rem',
+    marginBottom: 20,
+  },
+  visibleControl: {
+    marginLeft: '0.75rem',
+    height: '3.125rem',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '3rem',
   },
   checkBox: {
     borderWidth: 0,
@@ -55,6 +52,8 @@ const styles = EStyleSheet.create({
     alignItems: 'center',
     marginBottom: '1.25rem',
     transform: [{translateX: -6}],
+    width: 120,
+    marginTop: 22,
   },
   firstText: {
     fontSize: '2.063rem',
@@ -76,6 +75,7 @@ const styles = EStyleSheet.create({
     fontFamily: THEME.BOLD_FONT,
     color: '#2C3A4B',
     marginLeft: '1rem',
+    marginTop: 20,
   },
   forgotText: {
     fontSize: 16,
@@ -103,8 +103,46 @@ const styles = EStyleSheet.create({
     fontFamily: THEME.BOLD_FONT,
     color: THEME.PURPLE_COLOR,
   },
+  required: {
+    lineHeight: 18,
+    fontSize: 14,
+    color: '#DA1414',
+  },
+  errorInput: {
+    borderColor: '#DA1414',
+  },
+  error: {
+    marginTop: '0.5rem',
+    backgroundColor: '#FEEFEF',
+    color: '#DA1414',
+    paddingHorizontal: '1rem',
+    paddingVertical: '0.375rem',
+    borderRadius: 8,
+  },
+  dangerIcon: {
+    marginRight: '0.25rem',
+  },
+  errorText: {
+    fontSize: 14,
+    color: '#DA1414',
+  },
+  textinput: {
+    height: 'auto',
+    paddingVertical: '0.75rem',
+    paddingHorizontal: '1rem',
+    borderWidth: 0,
+    flexGrow: 1,
+  },
+  inputContainer: {
+    borderWidth: 1,
+    marginTop: '0.5rem',
+    borderColor: '#A5ABB3',
+    borderRadius: 8,
+    height: '3.125rem',
+  },
   row: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
 });
 EStyleSheet.build();

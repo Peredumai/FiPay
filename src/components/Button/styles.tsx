@@ -15,6 +15,12 @@ const styles = EStyleSheet.create({
     fontSize: '1.125rem',
     color: THEME.WHITE_COLOR,
   },
+  disabledText: {
+    opacity: 1,
+  },
+  disabled: {
+    backgroundColor: 'rgba(109, 95, 253, 0.5)',
+  },
 });
 EStyleSheet.build();
 

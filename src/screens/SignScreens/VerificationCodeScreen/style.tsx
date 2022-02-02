@@ -23,6 +23,8 @@ const styles = EStyleSheet.create({
     textAlign: 'center',
     marginTop: '2.5rem',
     marginRight: '1.25rem',
+    fontSize: 23,
+    fontFamily: THEME.BOLD_FONT,
   },
   inputsContainer: {
     flexDirection: 'row',
