@@ -4,18 +4,18 @@ import {THEME} from './../../../theme';
 const styles = EStyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 24,
-    paddingTop: 24,
+    paddingHorizontal: '1.5rem',
+    paddingTop: '1.5rem',
     backgroundColor: '#F0F0F0',
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 24,
+    marginBottom: '1.5rem',
   },
   headerText: {
-    fontSize: 28,
+    fontSize: '1.75rem',
     fontFamily: THEME.BOLD_FONT,
     color: '#2C3A4B',
   },
@@ -25,7 +25,7 @@ const styles = EStyleSheet.create({
     color: THEME.PURPLE_COLOR,
   },
   upcomingText: {
-    fontSize: 20,
+    fontSize: '1.25rem',
     fontFamily: THEME.BOLD_FONT,
     color: '#2C3A4B',
   },
@@ -33,20 +33,8 @@ const styles = EStyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: 24,
+    marginTop: '1.5rem ',
   },
-  // cardImage: {
-  //   position: 'absolute',
-  // },
-  // card: {
-  //   padding: 20,
-  //   paddingRight: 40,
-  // },
-  // balanceText: {
-  //   fontSize: 16,
-  //   color: '#F7F7F7',
-  //   fontFamily: THEME.DEFAULT_FONT,
-  // },
 });
 EStyleSheet.build();
 

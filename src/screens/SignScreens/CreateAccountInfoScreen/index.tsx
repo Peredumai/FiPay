@@ -6,56 +6,99 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
 } from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
+import arrowDown from '../../../../assets/images/arrowDown.png';
+import Dropdown from './../../../components/DropDown';
+import logo from '../../../../assets/images/fiLogo.png';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 const CreateAccountInfoScreen = () => {
+  const [countryValue, setCountryValue] = useState('');
+  const [stateValue, setStateValue] = useState('');
+  const [cityValue, setCityValue] = useState('');
+  const [streetValue, setStreetValue] = useState('');
+
+  const disabled = Boolean(
+    countryValue && stateValue && cityValue && streetValue,
+  );
+
   return (
-    <View style={styles.container}>
-      <Image
-        style={styles.logoImage}
-        source={require('../../../../assets/images/fiLogo.png')}
-      />
-      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-        <View style={styles.innerContainer}>
-          <View style={styles.textContainer}>
-            <Text style={styles.headerText}>Create a new account</Text>
-          </View>
-
-          <View style={styles.row}>
-            <Text style={styles.topInputText}>Country/Region</Text>
-            <Image source={require('../../../../assets/images/star.png')} />
-          </View>
-          <TextInput style={styles.countryInput} />
-
-          <View style={styles.rowBetween}>
-            <View>
-              <View style={styles.row}>
-                <Text style={styles.topInputText}>State</Text>
-                <Image source={require('../../../../assets/images/star.png')} />
+    <SafeAreaView style={styles.safeAreaContainer}>
+      <View style={styles.container}>
+        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+          <View style={styles.safeAreaContainer}>
+            <Image style={styles.logoImage} source={logo} />
+            <View style={styles.innerContainer}>
+              <View style={styles.textContainer}>
+                <Text style={styles.headerText}>Create a new account</Text>
               </View>
-              <TextInput style={styles.stateInput} />
-            </View>
-            <View>
-              <View style={styles.row}>
-                <Text style={styles.topInputText}>City</Text>
-                <Image source={require('../../../../assets/images/star.png')} />
+
+              <View>
+                <Text style={styles.topInputText}>
+                  Country/Region<Text style={styles.required}>*</Text>
+                </Text>
+                <View style={[styles.inputContainer, styles.rowContainer]}>
+                  {!countryValue && (
+                    <Image style={styles.stateIcon} source={arrowDown} />
+                  )}
+                  <Dropdown
+                    initial={countryValue}
+                    change={setCountryValue}
+                    isHalfWidth={false}
+                  />
+                </View>
               </View>
-              <TextInput style={styles.cityInput} />
+
+              <View style={styles.rowBetween}>
+                <View>
+                  <Text style={styles.topInputText}>
+                    State<Text style={styles.required}>*</Text>
+                  </Text>
+                  <View style={[styles.inputContainer, styles.rowContainer]}>
+                    {!stateValue && (
+                      <Image style={styles.stateIcon} source={arrowDown} />
+                    )}
+                    <Dropdown
+                      initial={stateValue}
+                      change={setStateValue}
+                      isHalfWidth={true}
+                    />
+                  </View>
+                </View>
+
+                <View>
+                  <Text style={styles.topInputText}>
+                    City<Text style={styles.required}>*</Text>
+                  </Text>
+                  <View style={styles.inputContainer}>
+                    <TextInput
+                      value={cityValue}
+                      onChangeText={setCityValue}
+                      style={styles.halfInput}
+                    />
+                  </View>
+                </View>
+              </View>
+
+              <View style={styles.streetWrapper}>
+                <Text style={styles.topInputText}>
+                  Street<Text style={styles.required}>*</Text>
+                </Text>
+                <TextInput
+                  value={streetValue}
+                  onChangeText={setStreetValue}
+                  style={styles.streetInput}
+                />
+              </View>
+
+              <Button text="Create Account" disabled={!disabled} />
             </View>
           </View>
-
-          <View style={styles.row}>
-            <Text style={styles.topInputText}>Street</Text>
-            <Image source={require('../../../../assets/images/star.png')} />
-          </View>
-          <TextInput style={styles.streetInput} />
-
-          <Button text="Create Account" />
-        </View>
-      </TouchableWithoutFeedback>
-    </View>
+        </TouchableWithoutFeedback>
+      </View>
+    </SafeAreaView>
   );
 };
 

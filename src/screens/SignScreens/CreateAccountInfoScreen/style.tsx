@@ -1,46 +1,28 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
 import {THEME} from './../../../theme';
 
+import {Dimensions} from 'react-native';
+const win = Dimensions.get('window');
+
 const styles = EStyleSheet.create({
+  safeAreaContainer: {
+    flex: 1,
+  },
   container: {
     flex: 1,
     paddingHorizontal: '1.5rem',
     backgroundColor: THEME.WHITE_COLOR,
   },
-  countryInput: {
-    alignSelf: 'stretch',
-    borderWidth: 1,
-    borderColor: '#A5ABB3',
-    borderRadius: '0.5rem',
-    marginTop: '0.5rem',
-    marginBottom: '1.25rem',
-    height: '3rem',
+  textinput: {
+    paddingVertical: '0.75rem',
     paddingHorizontal: '1rem',
-    paddingVertical: 12,
+    borderWidth: 0,
+    flexGrow: 1,
   },
-  stateInput: {
-    alignSelf: 'stretch',
-    borderWidth: 1,
-    borderColor: '#A5ABB3',
-    borderRadius: '0.5rem',
-    marginTop: '0.5rem',
-    marginBottom: '1.25rem',
-    height: '3rem',
-    width: 175,
-  },
-  cityInput: {
-    alignSelf: 'stretch',
-    borderWidth: 1,
-    borderColor: '#A5ABB3',
-    borderRadius: '0.5rem',
-    marginTop: '0.5rem',
-    marginBottom: '1.25rem',
-    height: '3rem',
-    width: 175,
-    paddingHorizontal: '1rem',
+  streetWrapper: {
+    marginTop: 20,
   },
   streetInput: {
-    alignSelf: 'stretch',
     borderWidth: 1,
     borderColor: '#A5ABB3',
     borderRadius: '0.5rem',
@@ -48,6 +30,9 @@ const styles = EStyleSheet.create({
     marginBottom: '1.25rem',
     paddingHorizontal: '1rem',
     height: '3rem',
+    fontFamily: THEME.BOLD_FONT,
+    color: '#2C3A4B',
+    fontSize: '1rem',
   },
   innerContainer: {
     flex: 1,
@@ -86,12 +71,6 @@ const styles = EStyleSheet.create({
     fontFamily: 'Avenir-Regular',
     color: THEME.PURPLE_COLOR,
   },
-  topInputText: {
-    fontSize: '1rem',
-    fontFamily: THEME.BOLD_FONT,
-    color: '#2C3A4B',
-    marginLeft: '1rem',
-  },
   haveNotAccountContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -107,15 +86,53 @@ const styles = EStyleSheet.create({
     fontFamily: THEME.BOLD_FONT,
     color: THEME.PURPLE_COLOR,
   },
-  row: {
-    flexDirection: 'row',
-  },
   haveNotAccountOpacity: {
     width: '8.4rem',
   },
   rowBetween: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    marginTop: '1.25rem',
+  },
+  icon: {
+    width: '1.5rem',
+    height: '1.5rem',
+    marginHorizontal: '0.75rem',
+  },
+  stateIcon: {
+    position: 'absolute',
+    right: '0.75rem',
+  },
+  inputContainer: {
+    borderWidth: 1,
+    marginTop: '0.5rem',
+    borderColor: '#A5ABB3',
+    borderRadius: 8,
+    height: '3.125rem',
+    alignItems: 'center',
+  },
+  rowContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  topInputText: {
+    fontSize: '1rem',
+    fontFamily: THEME.BOLD_FONT,
+    color: '#2C3A4B',
+    marginLeft: '1rem',
+  },
+  required: {
+    fontSize: '1rem',
+    color: '#DA1414',
+  },
+  halfInput: {
+    width: (win.width - 72) / 2,
+    paddingVertical: '0.75rem',
+    paddingHorizontal: '1rem',
+    borderWidth: 0,
+    fontFamily: THEME.BOLD_FONT,
+    color: '#2C3A4B',
+    fontSize: '1rem',
   },
 });
 EStyleSheet.build();

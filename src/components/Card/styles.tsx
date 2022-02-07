@@ -9,7 +9,7 @@ const styles = EStyleSheet.create({
     padding: '1.25rem',
   },
   balanceText: {
-    fontSize: 16,
+    fontSize: '1rem',
     color: '#F7F7F7',
     fontFamily: THEME.DEFAULT_FONT,
   },
@@ -20,7 +20,7 @@ const styles = EStyleSheet.create({
   },
   price: {
     fontFamily: THEME.BOLD_FONT,
-    fontSize: 33,
+    fontSize: '2.063rem',
     color: '#FEFEFE',
   },
   numberContainer: {

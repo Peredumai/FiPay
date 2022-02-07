@@ -9,6 +9,8 @@ import SocialScreen from '../src/screens/BottomTabScreens/SocialScreen/index';
 import AddScreen from '../src/screens/BottomTabScreens/AddScreen/index';
 import NotificationScreen from '../src/screens/BottomTabScreens/NotificationsScreen/index';
 import ChartScreen from '../src/screens/BottomTabScreens/ChartScreen/index';
+import styles from './styles';
+import OthersScreen from '../src/screens/BankAppScreens/OthersScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -59,10 +61,26 @@ const Tabs = () => {
             ),
           }}
         />
+
         <Tab.Screen
           name="Notification"
           component={NotificationScreen}
           options={{
+            headerTintColor: '#2C3A4B',
+            headerTitleStyle: styles.headerTitle,
+            headerShown: true,
+            headerRight: () => (
+              <Image
+                style={styles.iconRight}
+                source={require('../assets/images/searchIcon.png')}
+              />
+            ),
+            headerLeft: () => (
+              <Image
+                style={styles.iconLeft}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
             tabBarIcon: () => (
               <View>
                 <Image
@@ -73,9 +91,12 @@ const Tabs = () => {
           }}
         />
         <Tab.Screen
-          name="Social"
+          name="Contacts"
           component={SocialScreen}
           options={{
+            headerTintColor: '#2C3A4B',
+            headerTitleStyle: styles.headerTitle,
+            headerShown: true,
             tabBarIcon: () => (
               <View>
                 <Image

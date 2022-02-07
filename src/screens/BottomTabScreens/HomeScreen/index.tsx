@@ -18,7 +18,7 @@ export default function HomeScreen() {
           <Text style={styles.labelPurple}>See All</Text>
         </TouchableOpacity>
       </View>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <UpcomingBillCard />
         <UpcomingBillCard />
         <UpcomingBillCard />

@@ -19,6 +19,33 @@ const styles = EStyleSheet.create({
     fontFamily: THEME.BOLD_FONT,
     color: '#09101D',
   },
+  visibleControl: {
+    marginLeft: '0.75rem',
+    height: '3.125rem',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '3rem',
+  },
+  icon: {
+    width: '1.5rem',
+    height: '1.5rem',
+    marginHorizontal: '0.75rem',
+  },
+  textinput: {
+    height: 'auto',
+    paddingVertical: '0.75rem',
+    paddingHorizontal: '1rem',
+    borderWidth: 0,
+    flexGrow: 1,
+  },
+  inputContainer: {
+    borderWidth: 1,
+    marginTop: '0.5rem',
+    borderColor: '#A5ABB3',
+    borderRadius: 8,
+    height: '3.125rem',
+    marginBottom: '1.25rem',
+  },
   innerContainer: {
     flex: 1,
     marginTop: '3.5rem',

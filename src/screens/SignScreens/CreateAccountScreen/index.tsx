@@ -104,7 +104,7 @@ const CreateAccountScreen = props => {
   );
   const onPasswordChanged = useCallback(
     (text: string) => {
-      fullNameSucceed && emailSucceed && (password.length >= 4)
+      fullNameSucceed && emailSucceed && password.length >= 4
         ? setPasswordSucceed(true)
         : setPasswordSucceed(false);
       setPassword(text);
