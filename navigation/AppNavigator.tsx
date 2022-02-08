@@ -7,7 +7,6 @@ import NewPasswordScreen from '../src/screens/SignScreens/NewPasswordScreen';
 // import VerificationCodeScreen from '../src/screens/VerificationCodeScreen';
 // import CreateAccountInfoScreen from '../src/screens/CreateAccountInfoScreen/index';
 // import SuccessfulScreen from '../src/screens/SuccesfulScreen/index';
-// import HomeScreen from '../src/screens/BottomTabScreens/AddScreen';
 import CreateAccountScreen from '../src/screens/SignScreens/CreateAccountScreen';
 import ForgotPasswordScreen from '../src/screens/SignScreens/ForgotPasswordScreen';
 import SplashScreen from '../src/screens/SignScreens/SplashScreen';
@@ -20,6 +19,13 @@ import CurrentBalanceScreen from './../src/screens/BankAppScreens/CurrentBalance
 import ProfileScreen from '../src/screens/BankAppScreens/ProfileScreen';
 import LoginSecurityScreen from '../src/screens/BankAppScreens/LoginSecurityScreen';
 import CreateAccountInfoScreen from '../src/screens/SignScreens/CreateAccountInfoScreen';
+import TransactionSuccessfulScreen from '../src/screens/SignScreens/TransactionSuccesful';
+import NotificationSettingsScreen from '../src/screens/BankAppScreens/NotificationSettingsScreen';
+import MyCardsScreen from '../src/screens/BankAppScreens/MyCardsScreen';
+import SettingsScreen from '../src/screens/BankAppScreens/SettingsScreen';
+import LinkNewCardScreen from '../src/screens/BankAppScreens/LinkNewCardScreen';
+import LinkNewCardScreen2 from '../src/screens/BankAppScreens/LinkNewCardScreen2';
+import ExchangeMoneyScreen from '../src/screens/BankAppScreens/ExchangeMoneyScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,11 +39,72 @@ function appNavigator() {
           options={{headerShown: false}}
         />
         <Stack.Screen
+          name="ExchangeMoney"
+          component={ExchangeMoneyScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Link new card2"
+          component={LinkNewCardScreen2}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="My Cards"
+          component={MyCardsScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+          }}
+        />
+
+        <Stack.Screen
+          name="Link new card"
+          component={LinkNewCardScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="Settings"
+          component={SettingsScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="Notification Settings"
+          component={NotificationSettingsScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="Transaction Successful"
+          component={TransactionSuccessfulScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Successful"
+          component={SuccessfulScreen}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="CreateAccount"
+          component={CreateAccountScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
           name="SignIn"
           component={SignInScreen}
           options={{headerShown: false}}
         />
-
         <Stack.Screen
           name="Login and security"
           component={LoginSecurityScreen}
@@ -72,17 +139,6 @@ function appNavigator() {
         <Stack.Screen
           name="VerificationCode"
           component={VerificationCodeScreen}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name="Successful"
-          component={SuccessfulScreen}
-          options={{headerShown: false}}
-        />
-
-        <Stack.Screen
-          name="Splash"
-          component={SplashScreen}
           options={{headerShown: false}}
         />
 

@@ -55,7 +55,7 @@ const styles = EStyleSheet.create({
   },
   textContainer: {
     flexDirection: 'row',
-    marginBottom: '2.5rem',
+    // marginBottom: '2.5rem',
   },
   // checkBox: {
   //   marginRight: '0.75rem',

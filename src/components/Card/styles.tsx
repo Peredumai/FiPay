@@ -4,9 +4,10 @@ import {THEME} from './../../theme';
 const styles = EStyleSheet.create({
   cardImage: {
     // position: 'absolute',
-    width: '21.849rem',
-    height: '13.725rem',
+    // width: '21.849rem',
+    height: '14.901rem',
     padding: '1.25rem',
+    marginTop: 24,
   },
   balanceText: {
     fontSize: '1rem',

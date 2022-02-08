@@ -12,7 +12,6 @@ const styles = EStyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: '1.5rem',
   },
   headerText: {
     fontSize: '1.75rem',
@@ -33,7 +32,7 @@ const styles = EStyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginTop: '1.5rem ',
+    marginTop: '1.5rem',
   },
 });
 EStyleSheet.build();

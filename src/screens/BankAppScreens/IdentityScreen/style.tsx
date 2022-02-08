@@ -23,7 +23,7 @@ const styles = EStyleSheet.create({
     fontFamily: THEME.BOLD_FONT,
     color: '#2C3A4B',
     marginLeft: '1rem',
-    marginTop: '1.25',
+    marginTop: '1.25rem',
   },
   required: {
     lineHeight: '1.125rem',

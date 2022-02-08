@@ -15,7 +15,7 @@ import Button from './../../../components/Button/index';
 
 import {useNavigation} from '@react-navigation/native';
 
-import * as LoginApi from '../../../api/login';
+// import * as LoginApi from '../../../api/login';
 
 import eye from '../../../../assets/images/eye.png';
 import hiddenEye from '../../../../assets/images/hidden_eye.png';
@@ -100,12 +100,9 @@ const SignInScreen = () => {
     navigation.navigate('ForgotPassword' as any);
   }, [navigation]);
 
-  const finishAuthentication = useCallback(
-    (token: string) => {
-      navigation.navigate('FaceAuth' as any);
-    },
-    [navigation],
-  );
+  const finishAuthentication = useCallback(() => {
+    navigation.navigate('FaceAuth' as any);
+  }, [navigation]);
 
   const signIn = async () => {
     const errorsObject: any = {
@@ -123,12 +120,12 @@ const SignInScreen = () => {
     }
 
     try {
-      const token = await LoginApi.signIn({
-        login,
-        password,
-      });
+      // const token = await LoginApi.signIn({
+      //   login,
+      //   password,
+      // });
 
-      await finishAuthentication(token);
+      await finishAuthentication();
     } catch (e: any) {
       setErrors({
         ...errors,
@@ -156,7 +153,7 @@ const SignInScreen = () => {
 
           <View>
             <Text style={styles.topInputText}>
-              Email or Phone number <Text style={styles.required}>*</Text>
+              Email or Phone number<Text style={styles.required}>*</Text>
             </Text>
             <View
               style={[
@@ -191,7 +188,7 @@ const SignInScreen = () => {
               style={[
                 styles.inputContainer,
                 styles.row,
-                Boolean(errors.login) && styles.errorInput,
+                Boolean(errors.password) && styles.passwordInput,
               ]}>
               <TextInput
                 value={password}
@@ -222,6 +219,7 @@ const SignInScreen = () => {
             onPress={setIsRemember}>
             <CheckBox
               value={remember}
+              onChange={setIsRemember}
               tintColors={{true: '#6D5FFD', false: '#6D5FFD'}}
             />
             <Text style={styles.label}>Remember me</Text>

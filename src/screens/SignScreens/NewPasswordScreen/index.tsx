@@ -105,6 +105,7 @@ const NewPasswordScreen = () => {
             onPress={setIsRemember}>
             <CheckBox
               value={remember}
+              onChange={setIsRemember}
               tintColors={{true: '#6D5FFD', false: '#6D5FFD'}}
             />
             <Text style={styles.label}>Remember me</Text>

@@ -10,7 +10,6 @@ import AddScreen from '../src/screens/BottomTabScreens/AddScreen/index';
 import NotificationScreen from '../src/screens/BottomTabScreens/NotificationsScreen/index';
 import ChartScreen from '../src/screens/BottomTabScreens/ChartScreen/index';
 import styles from './styles';
-import OthersScreen from '../src/screens/BankAppScreens/OthersScreen';
 
 const Tab = createBottomTabNavigator();
 

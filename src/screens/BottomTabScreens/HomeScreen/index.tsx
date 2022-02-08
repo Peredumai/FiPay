@@ -11,7 +11,7 @@ export default function HomeScreen() {
         <Text style={styles.headerText}>Good morning, John!</Text>
         <Image source={require('../../../../assets/images/history.png')} />
       </View>
-      <Card />
+      <Card price={'$1299.15'} accountNumber={'• • •  • • •  • • •  8399'} />
       <View style={styles.upcomingView}>
         <Text style={styles.upcomingText}>Upcomming bill</Text>
         <TouchableOpacity>
