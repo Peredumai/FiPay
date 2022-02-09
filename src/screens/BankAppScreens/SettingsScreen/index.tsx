@@ -2,7 +2,7 @@ import {View, Text, Image, ScrollView} from 'react-native';
 import React from 'react';
 import styles from './style';
 
-export default function SettingsScreen() {
+const SettingsScreen = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.container}>
@@ -113,4 +113,6 @@ export default function SettingsScreen() {
       </View>
     </ScrollView>
   );
-}
+};
+
+export default SettingsScreen;

@@ -5,9 +5,10 @@ import styles from './styles';
 interface IContactCardProps {
   name: string;
   phoneNum: string;
+  img?: any;
 }
 
-const ContactCard = ({name, phoneNum}: IContactCardProps) => {
+const ContactCard = ({name, phoneNum, img}: IContactCardProps) => {
   return (
     <View>
       <View style={styles.container}>
@@ -17,16 +18,18 @@ const ContactCard = ({name, phoneNum}: IContactCardProps) => {
           />
           <View style={styles.textContainer}>
             <Text style={styles.marketText}>{name}</Text>
-            <Text style={styles.dateText}>{phoneNum}</Text>
+            <Text style={styles.dataText}>{phoneNum}</Text>
           </View>
         </View>
-        <View>
-          <TouchableOpacity>
-            <Image
-              source={require('../../../../client/assets/images/submitIcon.png')}
-            />
-          </TouchableOpacity>
-        </View>
+        {img && (
+          <View>
+            <TouchableOpacity>
+              <Image
+                source={require('../../../../client/assets/images/submitIcon.png')}
+              />
+            </TouchableOpacity>
+          </View>
+        )}
       </View>
       <View style={styles.line} />
     </View>

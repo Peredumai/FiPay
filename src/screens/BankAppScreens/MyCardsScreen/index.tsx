@@ -7,7 +7,7 @@ import Button from './../../../components/Button/index';
 import SimpleCard from '../../../../assets/images/Card.png';
 import RedCard from '../../../../assets/images/CardRed.png';
 
-export default function MyCardsScreen() {
+const MyCardsScreen = () => {
   return (
     <View style={styles.container}>
       {/* <Card price={'$1299.15'} accountNumber={'• • •  • • •  • • •  8399'} />
@@ -29,3 +29,5 @@ export default function MyCardsScreen() {
     </View>
   );
 }
+
+export default MyCardsScreen

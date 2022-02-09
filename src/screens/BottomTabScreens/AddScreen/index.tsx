@@ -1,10 +1,12 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-export default function AddScreen() {
+const AddScreen = () => {
   return (
     <View>
       <Text>AddScreen</Text>
     </View>
   );
-}
+};
+
+export default AddScreen;

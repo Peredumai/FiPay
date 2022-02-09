@@ -2,8 +2,14 @@ import {Text, Image, View, ImageBackground} from 'react-native';
 import React from 'react';
 import styles from './styles';
 
+interface ICardProps {
+  price: string;
+  accountNumber: string;
+  imageSource?: any;
+}
+
 // const Card = ({price, accountNumber}) => {
-const Card = ({price, accountNumber, imageSource}) => {
+const Card = ({price, accountNumber, imageSource}: ICardProps) => {
   return (
     <View>
       <ImageBackground

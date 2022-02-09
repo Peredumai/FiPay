@@ -4,7 +4,7 @@ import styles from './style';
 
 import ToggleSwitch from 'toggle-switch-react-native';
 
-export default function OthersScreen() {
+const OthersScreen = () => {
   const [switchValue, setSwitchValue] = useState(false);
 
   const toggleSwitch = value => {
@@ -80,4 +80,6 @@ export default function OthersScreen() {
       <View style={styles.line} />
     </View>
   );
-}
+};
+
+export default OthersScreen;

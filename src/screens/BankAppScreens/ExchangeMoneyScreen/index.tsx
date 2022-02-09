@@ -2,13 +2,13 @@ import {Image, Text, TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
 import styles from './style';
 
-import ExchangeDropDown from '../../../../assets/images/exchangeDropDown.png';
-
 import CircleDown from '../../../../assets/images/circleDown.png';
 import Dropdown from '../../../components/DropDown';
 
-export default function ExchangeMoneyScreen() {
-  const [countryValue, setCountryValue] = useState('');
+const ExchangeMoneyScreen = () => {
+  const [fromCurrencyValue, setFromCurrencyValue] = useState('USD');
+  const [toCurrencyValue, setToCurrencyValue] = useState('EUR');
+  // const [countryValue, setCountryValue] = useState('Ukraine');
 
   return (
     <View style={styles.container}>
@@ -20,8 +20,15 @@ export default function ExchangeMoneyScreen() {
           <View style={styles.row}>
             <View style={styles.row}>
               <TouchableOpacity style={styles.row}>
-                <Text style={styles.currency}>USD</Text>
-                <Image source={ExchangeDropDown} />
+                {/* <Text style={styles.currency}>USD</Text> */}
+                <Dropdown
+                  text={'currencyText'}
+                  type={'currencyPicker'}
+                  initial={fromCurrencyValue}
+                  change={setFromCurrencyValue}
+                  isHalfWidth={false}
+                />
+                {/* <Image source={ExchangeDropDown} /> */}
               </TouchableOpacity>
             </View>
             <View>
@@ -37,8 +44,13 @@ export default function ExchangeMoneyScreen() {
           <View style={styles.row}>
             <View style={styles.row}>
               <TouchableOpacity style={styles.row}>
-                <Text style={styles.currency}>EUR</Text>
-                <Image source={ExchangeDropDown} />
+                <Dropdown
+                  text={'currencyText'}
+                  type={'currencyPicker'}
+                  initial={toCurrencyValue}
+                  change={setToCurrencyValue}
+                  isHalfWidth={false}
+                />
               </TouchableOpacity>
             </View>
             <View>
@@ -49,4 +61,6 @@ export default function ExchangeMoneyScreen() {
       </View>
     </View>
   );
-}
+};
+
+export default ExchangeMoneyScreen;

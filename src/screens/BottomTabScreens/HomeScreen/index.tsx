@@ -4,7 +4,7 @@ import styles from './style';
 import Card from '../../../components/Card';
 import UpcomingBillCard from './../../../components/UpcomingBillCard/index';
 
-export default function HomeScreen() {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -27,4 +27,6 @@ export default function HomeScreen() {
       </ScrollView>
     </View>
   );
-}
+};
+
+export default HomeScreen;

@@ -9,7 +9,6 @@ import {
 import React, {useState} from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
-import arrowDown from '../../../../assets/images/arrowDown.png';
 import Dropdown from './../../../components/DropDown';
 import logo from '../../../../assets/images/fiLogo.png';
 import {SafeAreaView} from 'react-native-safe-area-context';
@@ -40,13 +39,12 @@ const CreateAccountInfoScreen = () => {
                   Country/Region<Text style={styles.required}>*</Text>
                 </Text>
                 <View style={[styles.inputContainer, styles.rowContainer]}>
-                  {!countryValue && (
-                    <Image style={styles.stateIcon} source={arrowDown} />
-                  )}
                   <Dropdown
                     initial={countryValue}
                     change={setCountryValue}
                     isHalfWidth={false}
+                    text={'countryText'}
+                    type={'countryPicker'}
                   />
                 </View>
               </View>
@@ -57,13 +55,14 @@ const CreateAccountInfoScreen = () => {
                     State<Text style={styles.required}>*</Text>
                   </Text>
                   <View style={[styles.inputContainer, styles.rowContainer]}>
-                    {!stateValue && (
+                    {/* {!stateValue && (
                       <Image style={styles.stateIcon} source={arrowDown} />
-                    )}
+                    )} */}
                     <Dropdown
                       initial={stateValue}
                       change={setStateValue}
                       isHalfWidth={true}
+                      type={'statesPicker'}
                     />
                   </View>
                 </View>
@@ -93,7 +92,13 @@ const CreateAccountInfoScreen = () => {
                 />
               </View>
 
-              <Button text="Create Account" disabled={!disabled} />
+              <Button
+                text="Create Account"
+                disabled={!disabled}
+                onPress={() => {
+                  console.log(countryValue, cityValue, streetValue, stateValue);
+                }}
+              />
             </View>
           </View>
         </TouchableWithoutFeedback>

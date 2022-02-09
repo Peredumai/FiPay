@@ -20,7 +20,7 @@ import H from '../../../../assets/images/LinkNewCardIcons/colors/8.png';
 
 import CalendarIcon from '../../../../assets/images/calendarIcon.png';
 
-export default function LinkNewCardScreen2() {
+const LinkNewCardScreen2 = () => {
   return (
     <View style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -104,4 +104,6 @@ export default function LinkNewCardScreen2() {
       </ScrollView>
     </View>
   );
-}
+};
+
+export default LinkNewCardScreen2;

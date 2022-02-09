@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './styles';
 import Button from '../../../components/Button';
 
-export default function ProfileScreen() {
+const ProfileScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
@@ -77,4 +77,6 @@ export default function ProfileScreen() {
       </View>
     </View>
   );
-}
+};
+
+export default ProfileScreen;

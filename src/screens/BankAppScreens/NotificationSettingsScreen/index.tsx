@@ -4,7 +4,7 @@ import styles from './style';
 
 import ToggleSwitch from 'toggle-switch-react-native';
 
-export default function NotificationSettingsScreen() {
+const NotificationSettingsScreen = () => {
   const [buySomething, setBuySomething] = useState(false);
   const [receiveMoney, setReceiveMoney] = useState(false);
   const [sendPayments, setSendPayments] = useState(false);
@@ -90,4 +90,6 @@ export default function NotificationSettingsScreen() {
       <View style={styles.line} />
     </View>
   );
-}
+};
+
+export default NotificationSettingsScreen;

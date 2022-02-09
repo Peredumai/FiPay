@@ -26,16 +26,73 @@ import SettingsScreen from '../src/screens/BankAppScreens/SettingsScreen';
 import LinkNewCardScreen from '../src/screens/BankAppScreens/LinkNewCardScreen';
 import LinkNewCardScreen2 from '../src/screens/BankAppScreens/LinkNewCardScreen2';
 import ExchangeMoneyScreen from '../src/screens/BankAppScreens/ExchangeMoneyScreen';
+import CheckExchangeScreen from '../src/screens/BankAppScreens/CheckExchangeScreen';
+import ManageMoneyScreen from '../src/screens/BankAppScreens/ManageMoneyScreen';
+import SendMoneyScreen from '../src/screens/BankAppScreens/SendMoneyScreen';
+import CurrencyScreen from '../src/screens/BankAppScreens/CurrencyScreen';
+import TransferMoneyScreen from './../src/screens/BankAppScreens/TransferMoneyScreen/index';
+import TopUpMoneyScreen from '../src/screens/BankAppScreens/TopUpMoneyScreen';
+import FlightTicketScreen from '../src/screens/BankAppScreens/FlightTicketScreen';
 
 const Stack = createNativeStackNavigator();
 
-function appNavigator() {
+const appNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="FlightTicket"
+          component={FlightTicketScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+        <Stack.Screen
+          name="Settings"
+          component={SettingsScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="TopUpMoney"
+          component={TopUpMoneyScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+        <Stack.Screen
+          name="TransferMoney"
+          component={TransferMoneyScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+        <Stack.Screen
           name="CreateAccountInfo"
           component={CreateAccountInfoScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ManageMoney"
+          component={ManageMoneyScreen}
+          options={{headerShown: true}}
+        />
+        <Stack.Screen
+          name="SendMoney"
+          component={SendMoneyScreen}
+          options={{headerShown: true}}
+        />
+
+        <Stack.Screen
+          name="Splash"
+          component={SplashScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Currency"
+          component={CurrencyScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+
+        <Stack.Screen
+          name="CheckExchange"
+          component={CheckExchangeScreen}
           options={{headerShown: false}}
         />
         <Stack.Screen
@@ -43,6 +100,7 @@ function appNavigator() {
           component={ExchangeMoneyScreen}
           options={{headerShown: false}}
         />
+
         <Stack.Screen
           name="Link new card2"
           component={LinkNewCardScreen2}
@@ -68,14 +126,7 @@ function appNavigator() {
             headerShadowVisible: false,
           }}
         />
-        <Stack.Screen
-          name="Settings"
-          component={SettingsScreen}
-          options={{
-            headerShown: true,
-            headerShadowVisible: false,
-          }}
-        />
+
         <Stack.Screen
           name="Notification Settings"
           component={NotificationSettingsScreen}
@@ -150,6 +201,6 @@ function appNavigator() {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};
 
 export default appNavigator;

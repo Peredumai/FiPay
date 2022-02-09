@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './style';
 import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 
-export default function StatisticsScreen() {
+const StatisticsScreen = () => {
   return (
     <View style={styles.container}>
       <Image
@@ -34,4 +34,6 @@ export default function StatisticsScreen() {
       </View>
     </View>
   );
-}
+};
+
+export default StatisticsScreen;

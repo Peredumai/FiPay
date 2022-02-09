@@ -10,7 +10,7 @@ const styles = EStyleSheet.create({
   },
   container: {
     flex: 1,
-    paddingHorizontal: '1.5rem',
+    paddingHorizontal: 24,
     backgroundColor: THEME.WHITE_COLOR,
   },
   textinput: {

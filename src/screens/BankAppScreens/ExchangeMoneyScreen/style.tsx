@@ -1,5 +1,5 @@
 import EStyleSheet from 'react-native-extended-stylesheet';
-import { THEME } from '../../../theme';
+import {THEME} from '../../../theme';
 
 const styles = EStyleSheet.create({
   container: {
@@ -47,7 +47,7 @@ const styles = EStyleSheet.create({
     color: '#6D5FFD',
     fontSize: 28,
     fontFamily: THEME.BOLD_FONT,
-  }
+  },
 });
 EStyleSheet.build();
 

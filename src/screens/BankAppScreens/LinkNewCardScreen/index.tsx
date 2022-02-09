@@ -16,7 +16,7 @@ import Master from '../../../../assets/images/LinkNewCardIcons/masterCard.png';
 import Paypal from '../../../../assets/images/LinkNewCardIcons/paypal.png';
 import Payoneer from '../../../../assets/images/LinkNewCardIcons/payoneer.png';
 
-export default function LinkNewCardScreen() {
+const LinkNewCardScreen = () => {
   return (
     <View style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -93,3 +93,5 @@ export default function LinkNewCardScreen() {
     </View>
   );
 }
+
+export default LinkNewCardScreen;

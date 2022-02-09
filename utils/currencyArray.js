@@ -1,0 +1,1 @@
+export const currencyArray = ['USD', 'EUR', 'UAH', 'RUB', 'SGD'];

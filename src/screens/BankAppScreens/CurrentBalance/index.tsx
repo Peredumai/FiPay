@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './style';
 import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 
-export default function CurrentBalanceScreen() {
+const CurrentBalanceScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.purpleBackground}>
@@ -47,3 +47,5 @@ export default function CurrentBalanceScreen() {
     </View>
   );
 }
+
+export default CurrentBalanceScreen;

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
 
-export default function IdentityCardScreen() {
+const IdentityCardScreen = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.container}>
@@ -60,3 +60,5 @@ export default function IdentityCardScreen() {
     </ScrollView>
   );
 }
+
+export default IdentityCardScreen;

@@ -37,7 +37,7 @@ const styles = EStyleSheet.create({
     fontSize: '1rem',
     fontFamily: THEME.BOLD_FONT,
   },
-  dateText: {
+  dataText: {
     color: '#858C94',
     fontSize: '0.688rem',
     fontFamily: THEME.DEFAULT_FONT,

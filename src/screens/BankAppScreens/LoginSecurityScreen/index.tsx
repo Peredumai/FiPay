@@ -4,7 +4,7 @@ import styles from './style';
 
 import ToggleSwitch from 'toggle-switch-react-native';
 
-export default function LoginSecurityScreen() {
+const LoginSecurityScreen = () => {
   const [switchValue, setSwitchValue] = useState(false);
 
   const toggleSwitch = value => {
@@ -83,3 +83,5 @@ export default function LoginSecurityScreen() {
     </View>
   );
 }
+
+export default LoginSecurityScreen
