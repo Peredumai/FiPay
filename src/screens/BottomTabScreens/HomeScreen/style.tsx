@@ -39,14 +39,16 @@ const styles = EStyleSheet.create({
   },
   wrap: {
     width: win.width,
-    marginLeft: -24,
+    marginLeft: - 24,
+    // paddingLeft: 24,
+    // marginHorizontal: 24, 
   },
   mr: {
     marginRight: 24,
   },
-  pl: {
-    paddingLeft: 36,
-  },
+  // pl: {
+  //   paddingLeft: 36,
+  // },
 });
 EStyleSheet.build();
 

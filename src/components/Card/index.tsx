@@ -3,15 +3,18 @@ import React from 'react';
 import styles from './styles';
 import AmazonImg from '../../../assets/images/Amazon.png';
 
-interface ICardProps {
+export interface ICardProps {
   price: string;
   accountNumber: string;
   imageSource?: any;
+  style?: any;
 }
 
-const Card = ({price, accountNumber, imageSource}: ICardProps) => {
+const Card = ({price, accountNumber, imageSource, style}: ICardProps) => {
+  console.log(price, accountNumber, imageSource)
   return (
-    <View>
+    // <View style={{marginLeft: 24, marginRight: 24}}>
+    <View style={[styles.cardWrapper, style]}>
       <ImageBackground
         resizeMode={'stretch'}
         style={styles.cardImage}
