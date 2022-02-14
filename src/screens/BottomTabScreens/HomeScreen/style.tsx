@@ -1,5 +1,8 @@
+import {Dimensions} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import {THEME} from './../../../theme';
+
+const win = Dimensions.get('window');
 
 const styles = EStyleSheet.create({
   container: {
@@ -33,6 +36,16 @@ const styles = EStyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginTop: '1.5rem',
+  },
+  wrap: {
+    width: win.width,
+    marginLeft: -24,
+  },
+  mr: {
+    marginRight: 24,
+  },
+  pl: {
+    paddingLeft: 36,
   },
 });
 EStyleSheet.build();
