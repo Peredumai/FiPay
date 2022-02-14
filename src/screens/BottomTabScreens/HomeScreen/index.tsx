@@ -44,21 +44,50 @@ const cards = [
     accountNumber: '• • •  • • •  • • •  5678',
     imageSource: CardImage,
   },
+  {
+    price: '$1499.05',
+    accountNumber: '• • •  • • •  • • •  5678',
+    imageSource: CardImage,
+  },
+  {
+    price: '$4444.95',
+    accountNumber: '• • •  • • •  • • •  5678',
+    imageSource: CardImage,
+  },
+  {
+    price: '$3333.95',
+    accountNumber: '• • •  • • •  • • •  5678',
+    imageSource: CardImage,
+  },
+  {
+    price: '$2222.95',
+    accountNumber: '• • •  • • •  • • •  5678',
+    imageSource: CardImage,
+  },
+  {
+    price: '$1111.95',
+    accountNumber: '• • •  • • •  • • •  5678',
+    imageSource: CardImage,
+  },
+  {
+    price: '$1241.95',
+    accountNumber: '• • •  • • •  • • •  5678',
+    imageSource: CardImage,
+  },
 ];
 
 const HomeScreen = () => {
-  // const [cardActive, setCardActive] = useState(0);
+  const [, setCardActive] = useState(0);
 
-  // const onchange = nativeEvent => {
-  //   if (nativeEvent) {
-  //     const slide = Math.ceil(
-  //       nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width,
-  //     );
-  //     if (slide !== cardActive) {
-  //       setCardActive(slide);
-  //     }
-  //   }
-  // };
+  const onscroll = ({
+    nativeEvent: {
+      contentOffset: {x},
+    },
+  }) => {
+    const index = Math.round(x / (win.width - 24));
+
+    setCardActive(index);
+  };
 
   const renderItem = ({item, index}: IRenderItem) => (
     <Card
@@ -75,41 +104,12 @@ const HomeScreen = () => {
         <Text style={styles.headerText}>Good morning, John!</Text>
         <Image source={require('../../../../assets/images/history.png')} />
       </View>
-      {/* <Card
-        imageSource={CardImage}
-        price={'$1299.15'}
-        accountNumber={'• • •  • • •  • • •  8399'}
-      /> */}
       <View style={styles.wrap}>
-        {/* <ScrollView
-          onScroll={({nativeEvent}) => onchange(nativeEvent)}
-          showsHorizontalScrollIndicator={false}
-          pagingEnabled
-          horizontal> */}
-        {/* {cards.map((e, index) => (
-            <Card
-              key={index}
-              price={e.price}
-              imageSource={e.imageSource}
-              accountNumber={e.accountNumber}
-            />
-          ))} */}
-        {/* {cards.map((e, index) => {
-            return (
-              <Card
-                key={index}
-                price={e.price}
-                imageSource={e.imageSource}
-                accountNumber={e.accountNumber}
-                style={index === cards.length - 1 ? styles.mr : null}
-              />
-            );
-          })} */}
-        {/* </ScrollView> */}
         <FlatList
           data={cards}
           horizontal
-          // snapToAlignment="center"
+          onScroll={onscroll}
+          decelerationRate="fast"
           renderItem={renderItem}
           keyExtractor={item => item.price}
           pagingEnabled

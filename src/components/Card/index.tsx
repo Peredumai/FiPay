@@ -11,7 +11,6 @@ export interface ICardProps {
 }
 
 const Card = ({price, accountNumber, imageSource, style}: ICardProps) => {
-  console.log(price, accountNumber, imageSource)
   return (
     // <View style={{marginLeft: 24, marginRight: 24}}>
     <View style={[styles.cardWrapper, style]}>
