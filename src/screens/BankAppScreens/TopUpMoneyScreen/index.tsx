@@ -78,9 +78,7 @@ const TopUpMoneyScreen = () => {
             </View>
 
             <View style={styles.mt}>
-              <Text style={styles.topInputText}>
-                Message<Text style={styles.required}>*</Text>
-              </Text>
+              <Text style={styles.messageLabel}>Note</Text>
               <View style={[styles.areaContainer]}>
                 <TextInput
                   multiline={true}
@@ -91,7 +89,7 @@ const TopUpMoneyScreen = () => {
               </View>
             </View>
 
-            <Image style={styles.cirleImg} source={CircleDown} />
+            {/* <Image style={styles.cirleImg} source={CircleDown} />
 
             <ContactCard
               name={'Acourtney Henry'}
@@ -110,7 +108,7 @@ const TopUpMoneyScreen = () => {
               onPress={() => {}}
               style={styles.touchableOpacity}>
               <Text style={styles.text}>Add recipient</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
             <View style={styles.button}>
               <Button text={'Transfer'} disabled={false} />
             </View>

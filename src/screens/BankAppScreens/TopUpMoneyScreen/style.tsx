@@ -50,6 +50,7 @@ const styles = EStyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    marginRight: -10,
   },
   center: {
     alignItems: 'center',
@@ -57,7 +58,7 @@ const styles = EStyleSheet.create({
     paddingVertical: 10,
     backgroundColor: 'rgba(109, 95, 253, 0.1)',
     borderRadius: 4,
-    width: (win.width - 48 - 30) / 4,
+    width: 87.5,
   },
   price: {
     color: THEME.PURPLE_COLOR,
@@ -113,6 +114,12 @@ const styles = EStyleSheet.create({
   row: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  messageLabel: {
+    fontSize: '1rem',
+    fontFamily: THEME.BOLD_FONT,
+    color: '#2C3A4B',
+    marginLeft: '1rem',
   },
 });
 EStyleSheet.build();

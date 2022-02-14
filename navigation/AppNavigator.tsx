@@ -33,6 +33,11 @@ import CurrencyScreen from '../src/screens/BankAppScreens/CurrencyScreen';
 import TransferMoneyScreen from './../src/screens/BankAppScreens/TransferMoneyScreen/index';
 import TopUpMoneyScreen from '../src/screens/BankAppScreens/TopUpMoneyScreen';
 import FlightTicketScreen from '../src/screens/BankAppScreens/FlightTicketScreen';
+import BudgetCalculationScreen from '../src/screens/BankAppScreens/BudgetCalculation';
+import {Image} from 'react-native';
+import styles from './styles';
+import {THEME} from './../src/theme';
+import DetailsScreen from '../src/screens/BankAppScreens/DetailsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,8 +46,42 @@ const appNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="Detail balance"
+          component={DetailsScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+        <Stack.Screen
+          name="ManageMoney"
+          component={ManageMoneyScreen}
+          options={{headerShown: true}}
+        />
+
+        <Stack.Screen
+          name="BudgetCalculation"
+          component={BudgetCalculationScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+            headerTintColor: '#ffffff',
+            headerStyle: {
+              backgroundColor: THEME.PURPLE_COLOR,
+            },
+            headerLeft: () => (
+              <Image
+                style={styles.iconRight}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
+          }}
+        />
+        <Stack.Screen
           name="FlightTicket"
           component={FlightTicketScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+        <Stack.Screen
+          name="TopUpMoney"
+          component={TopUpMoneyScreen}
           options={{headerShown: true, headerShadowVisible: false}}
         />
         <Stack.Screen
@@ -54,11 +93,6 @@ const appNavigator = () => {
           }}
         />
         <Stack.Screen
-          name="TopUpMoney"
-          component={TopUpMoneyScreen}
-          options={{headerShown: true, headerShadowVisible: false}}
-        />
-        <Stack.Screen
           name="TransferMoney"
           component={TransferMoneyScreen}
           options={{headerShown: true, headerShadowVisible: false}}
@@ -68,11 +102,7 @@ const appNavigator = () => {
           component={CreateAccountInfoScreen}
           options={{headerShown: false}}
         />
-        <Stack.Screen
-          name="ManageMoney"
-          component={ManageMoneyScreen}
-          options={{headerShown: true}}
-        />
+
         <Stack.Screen
           name="SendMoney"
           component={SendMoneyScreen}

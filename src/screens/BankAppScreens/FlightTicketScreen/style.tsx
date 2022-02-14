@@ -7,11 +7,14 @@ const styles = EStyleSheet.create({
     backgroundColor: '#ffffff',
     paddingHorizontal: '1.5rem',
   },
+  first: {
+    marginBottom: 28.68,
+  },
   wrapper: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: '1.25rem',
+    // paddingVertical: '1.25rem',
   },
   row: {
     flexDirection: 'row',
@@ -34,11 +37,6 @@ const styles = EStyleSheet.create({
     fontSize: '1rem',
     color: '#2C3A4B',
   },
-  line: {
-    width: 'auto',
-    borderWidth: 1,
-    borderColor: '#EBEEF2',
-  },
   timeText: {
     color: '#2C3A4B',
     fontSize: '1rem',
@@ -48,6 +46,23 @@ const styles = EStyleSheet.create({
     paddingLeft: '1rem',
     justifyContent: 'space-between',
   },
+  touchableOpacity: {
+    backgroundColor: '#ffffff',
+    borderRadius: '0.5rem',
+    borderColor: THEME.PURPLE_COLOR,
+    height: '3.438rem',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'stretch',
+    marginTop: 24,
+    borderWidth: '0.125rem',
+  },
+  text: {
+    color: THEME.PURPLE_COLOR,
+    fontSize: 18,
+    fontFamily: THEME.BOLD_FONT,
+  },
+ 
 });
 EStyleSheet.build();
 

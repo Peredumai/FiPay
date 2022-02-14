@@ -3,9 +3,8 @@ import {THEME} from './../../theme';
 
 const styles = EStyleSheet.create({
   cardImage: {
-    // position: 'absolute',
-    // width: '21.849rem',
-    height: '14.901rem',
+    width: 349.58,
+    height: 219.6,
     padding: '1.25rem',
     marginTop: 24,
   },
@@ -36,6 +35,11 @@ const styles = EStyleSheet.create({
     fontFamily: THEME.BOLD_FONT,
     fontSize: '1rem',
     color: '#FEFEFE',
+  },
+  amazonImg: {
+    position: 'absolute',
+    top: 25,
+    right: 21.27,
   },
 });
 EStyleSheet.build();
