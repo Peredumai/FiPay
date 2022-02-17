@@ -77,7 +77,7 @@ const cards = [
 ];
 
 const HomeScreen = () => {
-  const [, setCardActive] = useState(0);
+  const [cardActive, setCardActive] = useState(0);
 
   const onscroll = ({
     nativeEvent: {
@@ -104,6 +104,7 @@ const HomeScreen = () => {
         <Text style={styles.headerText}>Good morning, John!</Text>
         <Image source={require('../../../../assets/images/history.png')} />
       </View>
+
       <View style={styles.wrap}>
         <FlatList
           data={cards}

@@ -11,6 +11,18 @@ import NotificationScreen from '../src/screens/BottomTabScreens/NotificationsScr
 import ChartScreen from '../src/screens/BottomTabScreens/ChartScreen/index';
 import styles from './styles';
 
+import Home from '../assets/images/BottomTabIcons/Home.svg';
+import HomeFilled from '../assets/images/BottomTabIcons/HomeFilled.svg';
+import Add from '../assets/images/BottomTabIcons/Add.svg';
+import AddFilled from '../assets/images/BottomTabIcons/AddFilled.svg';
+import Notification from '../assets/images/BottomTabIcons/Notification.svg';
+import NotificationFilled from '../assets/images/BottomTabIcons/NotificationFilled.svg';
+import Statistics from '../assets/images/BottomTabIcons/Statistics.svg';
+import StatisticsFilled from '../assets/images/BottomTabIcons/StatisticsFilled.svg';
+import Person from '../assets/images/BottomTabIcons/Person.svg';
+import PersonFilled from '../assets/images/BottomTabIcons/PersonFilled.svg';
+import StatisticsScreen from '../src/screens/BankAppScreens/StatisticsScreen';
+
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
@@ -25,39 +37,22 @@ const Tabs = () => {
           name="Home"
           component={HomeScreen}
           options={{
-            tabBarIcon: () => (
-              <View>
-                <Image
-                  source={require('../assets/images/BottomTabIcons/home.png')}
-                />
-              </View>
-            ),
+            tabBarIcon: ({focused}) => (focused ? <HomeFilled /> : <Home />),
           }}
         />
         <Tab.Screen
-          name="Chart"
-          component={ChartScreen}
+          name="Statistics"
+          component={StatisticsScreen}
           options={{
-            tabBarIcon: () => (
-              <View>
-                <Image
-                  source={require('../assets/images/BottomTabIcons/chart.png')}
-                />
-              </View>
-            ),
+            tabBarIcon: ({focused}) =>
+              focused ? <StatisticsFilled /> : <Statistics />,
           }}
         />
         <Tab.Screen
           name="Add"
           component={AddScreen}
           options={{
-            tabBarIcon: () => (
-              <View>
-                <Image
-                  source={require('../assets/images/BottomTabIcons/add.png')}
-                />
-              </View>
-            ),
+            tabBarIcon: ({focused}) => (focused ? <AddFilled /> : <Add />),
           }}
         />
 
@@ -80,13 +75,8 @@ const Tabs = () => {
                 source={require('../assets/images/arrowBack.png')}
               />
             ),
-            tabBarIcon: () => (
-              <View>
-                <Image
-                  source={require('../assets/images/BottomTabIcons/notifications.png')}
-                />
-              </View>
-            ),
+            tabBarIcon: ({focused}) =>
+              focused ? <NotificationFilled /> : <Notification />,
           }}
         />
         <Tab.Screen
@@ -96,13 +86,8 @@ const Tabs = () => {
             headerTintColor: '#2C3A4B',
             headerTitleStyle: styles.headerTitle,
             headerShown: true,
-            tabBarIcon: () => (
-              <View>
-                <Image
-                  source={require('../assets/images/BottomTabIcons/person.png')}
-                />
-              </View>
-            ),
+            tabBarIcon: ({focused}) =>
+              focused ? <PersonFilled /> : <Person />,
           }}
         />
       </Tab.Navigator>

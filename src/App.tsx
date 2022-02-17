@@ -1,6 +1,6 @@
 import React from 'react';
-// import AppNavigator from '../navigation/AppNavigator';
-import Tabs from '../navigation/TabNavigator';
+import AppNavigator from '../navigation/AppNavigator';
+// import Tabs from '../navigation/TabNavigator';
 
 // import NewPasswordScreen from './screens/NewPasswordScreen';
 // import CreateAccountScreen from './screens/CreateAccountScreen';
@@ -13,7 +13,7 @@ import Tabs from '../navigation/TabNavigator';
 // import SplashScreen from './screens/SignScreens/SplashScreen/index';
 
 const App = () => {
-  return <Tabs />;
+  return <AppNavigator />;
 };
 
 export default App;

@@ -38,6 +38,7 @@ import {Image} from 'react-native';
 import styles from './styles';
 import {THEME} from './../src/theme';
 import DetailsScreen from '../src/screens/BankAppScreens/DetailsScreen';
+import StatisticsScreenPieChart from '../src/screens/BankAppScreens/StatisticsScreenPieChart';
 
 const Stack = createNativeStackNavigator();
 
@@ -45,6 +46,17 @@ const appNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="StatisticsPieChart"
+          component={StatisticsScreenPieChart}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Statistics"
+          component={StatisticsScreen}
+          options={{headerShown: false}}
+        />
+
         <Stack.Screen
           name="Detail balance"
           component={DetailsScreen}
@@ -199,11 +211,6 @@ const appNavigator = () => {
         <Stack.Screen
           name="CurrentBalance"
           component={CurrentBalanceScreen}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name="Statistics"
-          component={StatisticsScreen}
           options={{headerShown: false}}
         />
         <Stack.Screen
