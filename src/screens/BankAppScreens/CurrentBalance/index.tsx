@@ -3,9 +3,11 @@ import React from 'react';
 import styles from './style';
 import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 
+import * as Progress from 'react-native-progress';
+
 const CurrentBalanceScreen = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.purpleBackground}>
         <Text style={styles.headerText}>Current balance</Text>
         <View style={styles.incomeExpences}>
@@ -34,18 +36,17 @@ const CurrentBalanceScreen = () => {
                 <Text style={styles.headText}>Expense</Text>
               </View>
               <View>
-                <Text style={styles.headPrice}>$11.300</Text>
+                <Text style={styles.headPriceRed}>$11.300</Text>
               </View>
             </View>
           </View>
         </View>
-        <Image
-          style={styles.balanceImg}
-          source={require('../../../../assets/images/currentBalanceDiagram.png')}
-        />
       </View>
-    </View>
+      <View style={styles.infoContainer}>
+        <Progress.Circle size={130} />
+      </View>
+    </ScrollView>
   );
-}
+};
 
 export default CurrentBalanceScreen;

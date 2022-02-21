@@ -132,6 +132,9 @@ const styles = EStyleSheet.create({
     paddingHorizontal: '1rem',
     borderWidth: 0,
     flexGrow: 1,
+    color: '#09101D',
+    fontFamily: THEME.BOLD_FONT,
+    fontSize: '1rem',
   },
   inputContainer: {
     borderWidth: 1,

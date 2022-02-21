@@ -15,6 +15,7 @@ import ArrowDown from '../../../../assets/images/StatisticsIcons/arrowDownBlue.s
 import ArrowUp from '../../../../assets/images/StatisticsIcons/arrowUpRed.svg';
 import {BottomPopup} from './../../../components/BottomPopup/index';
 import Button from './../../../components/Button/index';
+import Filter from '../../../components/Filter';
 
 const StatisticsScreenPieChart = () => {
   let popupRef = React.createRef();
@@ -34,11 +35,8 @@ const StatisticsScreenPieChart = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.container}>
-        <TouchableOpacity onPress={onShowPopup}>
-          <Text>Show Popup</Text>
-        </TouchableOpacity>
         <BottomPopup
-          component={<Button text={'fuck you'} disabled={false} />}
+          component={<Filter />}
           onTouchOutside={onClosePopup}
           ref={target => (popupRef = target)}
         />
@@ -84,7 +82,9 @@ const StatisticsScreenPieChart = () => {
 
         <View style={styles.purpleBackground}>
           <Text style={styles.headerText}>StatisticsPieChart</Text>
-          <TouchableOpacity style={styles.touchableOpacity}>
+          <TouchableOpacity
+            style={styles.touchableOpacity}
+            onPress={onShowPopup}>
             <Text style={styles.text}>This Week</Text>
             <Image
               source={require('../../../../assets/images/arrowDropDown.png')}

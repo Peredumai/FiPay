@@ -1,13 +1,7 @@
-import {
-  Modal,
-  Dimensions,
-  TouchableWithoutFeedback,
-  View,
-  Text,
-} from 'react-native';
+import {Modal, TouchableWithoutFeedback, View} from 'react-native';
 import React from 'react';
 
-const deviceHeight = Dimensions.get('window').height;
+import styles from './styles';
 
 export class BottomPopup extends React.Component {
   constructor(props) {
@@ -27,14 +21,16 @@ export class BottomPopup extends React.Component {
 
   renderOutsideTouchable(onTouch) {
     const view = <View style={{flex: 1, width: '100%'}} />;
-    if (!onTouch) return view;
+    if (!onTouch) {
+      return view;
+    }
     return (
       <TouchableWithoutFeedback
         onPress={onTouch}
         style={{
           flex: 1,
         }}>
-        <View style={{flex: 1}}></View>
+        <View style={{flex: 1}} />
       </TouchableWithoutFeedback>
     );
   }
@@ -42,7 +38,8 @@ export class BottomPopup extends React.Component {
   renderContent = () => {
     const {component} = this.props;
     return (
-      <View>
+      <View style={styles.modal}>
+        <View style={styles.shortLine}></View>
         {component}
       </View>
     );
@@ -50,7 +47,7 @@ export class BottomPopup extends React.Component {
 
   render() {
     let {show} = this.state;
-    const {onTouchOutside, title} = this.props;
+    const {onTouchOutside} = this.props;
 
     return (
       <Modal
@@ -71,7 +68,6 @@ export class BottomPopup extends React.Component {
               width: '100%',
               borderTopRightRadius: 10,
               borderTopLeftRadius: 10,
-              paddingHorizontal: 10,
               height: 'auto',
             }}>
             {/* <View>

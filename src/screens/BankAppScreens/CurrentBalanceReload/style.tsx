@@ -9,17 +9,23 @@ const win = Dimensions.get('window');
 const styles = EStyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#FFFFFF',
   },
-  purpleBackground: {
-    height: '25rem',
-    backgroundColor: THEME.PURPLE_COLOR,
-    paddingHorizontal: '1.5rem',
-    paddingTop: '3.375rem',
+  purple: {
+    backgroundColor: '#6D5FFD',
+    height: 549,
+    width: '100%',
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    left: 0,
+    paddingHorizontal: 24,
   },
   headerText: {
     fontSize: '1.438rem',
     fontFamily: THEME.BOLD_FONT,
     color: '#FFFFFF',
+    marginTop: 42.5,
   },
   incomeExpences: {
     padding: '1.5rem',
@@ -71,6 +77,49 @@ const styles = EStyleSheet.create({
     marginTop: '1.5rem',
     resizeMode: 'stretch',
     width: win.width - 48,
+  },
+  chartContainer: {
+    // height: '34.901rem',
+    borderWidth: 1,
+    borderColor: THEME.PURPLE_COLOR,
+    backgroundColor: '#FFFFFF',
+    marginVertical: 24,
+    borderRadius: 12,
+    paddingTop: 32,
+    alignItems: 'center',
+  },
+  chartWrapper: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  dateText: {
+    fontSize: '1rem',
+    fontFamily: THEME.BOLD_FONT,
+    color: '#A5ABB3',
+    textAlign: 'center',
+  },
+  perCentText: {
+    fontSize: 33,
+    fontFamily: THEME.BOLD_FONT,
+    color: '#2C3A4B',
+    textAlign: 'center',
+  },
+  label: {
+    color: '#2C3A4B',
+    fontSize: 20,
+    marginTop: 48,
+    fontFamily: THEME.BOLD_FONT,
+  },
+  nums: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 48,
+    transform: [{translateY: -45}],
+  },
+  num: {
+    fontSize: 14,
+    color: '#858C94',
+    fontFamily: THEME.DEFAULT_FONT,
   },
 });
 EStyleSheet.build();

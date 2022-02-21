@@ -39,6 +39,8 @@ import styles from './styles';
 import {THEME} from './../src/theme';
 import DetailsScreen from '../src/screens/BankAppScreens/DetailsScreen';
 import StatisticsScreenPieChart from '../src/screens/BankAppScreens/StatisticsScreenPieChart';
+import Filter from '../src/components/Filter';
+import CurrentBalanceScreenReload from '../src/screens/BankAppScreens/CurrentBalanceReload';
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +48,11 @@ const appNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="CurrentBalance"
+          component={CurrentBalanceScreenReload}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name="StatisticsPieChart"
           component={StatisticsScreenPieChart}
@@ -208,11 +215,7 @@ const appNavigator = () => {
           component={ProfileScreen}
           options={{headerShown: false}}
         />
-        <Stack.Screen
-          name="CurrentBalance"
-          component={CurrentBalanceScreen}
-          options={{headerShown: false}}
-        />
+
         <Stack.Screen
           name="NewPassword"
           component={NewPasswordScreen}
