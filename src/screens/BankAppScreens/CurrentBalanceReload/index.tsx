@@ -108,7 +108,7 @@ const CurrentBalanceScreenReload = () => {
             </View>
           </View>
           <Text style={styles.label}>Days</Text>
-          <View>
+          <View style={styles.barchartWrapper}>
             <VictoryChart>
               <VictoryAxis
                 height={100}
@@ -119,7 +119,7 @@ const CurrentBalanceScreenReload = () => {
               />
               <VictoryBar
                 padding={{top: 0, bottom: 0}}
-                // domainPadding={{x: [0, 0], y: 35}}
+                domainPadding={{x: [0, 0], y: 35}}
                 height={100}
                 cornerRadius={2}
                 barWidth={4}
@@ -134,6 +134,7 @@ const CurrentBalanceScreenReload = () => {
             <View style={styles.nums}>
               <Text style={styles.num}>1</Text>
               <Text style={styles.num}>5</Text>
+              <Text style={styles.num}>10</Text>
               <Text style={styles.num}>15</Text>
               <Text style={styles.num}>20</Text>
               <Text style={styles.num}>25</Text>

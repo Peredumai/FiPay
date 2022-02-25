@@ -42,11 +42,11 @@ const styles = EStyleSheet.create({
     color: '#FFFFFF',
   },
   chartImage: {
-    resizeMode: 'stretch',
     position: 'absolute',
     zIndex: 1,
     marginTop: '5rem',
     width: win.width,
+    padding: 24,
   },
   labelPurple: {
     fontSize: '1rem',

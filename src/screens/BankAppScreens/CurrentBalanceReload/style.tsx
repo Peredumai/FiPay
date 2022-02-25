@@ -79,7 +79,7 @@ const styles = EStyleSheet.create({
     width: win.width - 48,
   },
   chartContainer: {
-    // height: '34.901rem',
+    height: '34.901rem',
     borderWidth: 1,
     borderColor: THEME.PURPLE_COLOR,
     backgroundColor: '#FFFFFF',
@@ -121,6 +121,9 @@ const styles = EStyleSheet.create({
     color: '#858C94',
     fontFamily: THEME.DEFAULT_FONT,
   },
+  barchartWrapper: {
+    transform: [{translateY: -80}],
+  }
 });
 EStyleSheet.build();
 

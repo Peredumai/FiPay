@@ -49,26 +49,27 @@ const appNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="CurrentBalance"
-          component={CurrentBalanceScreenReload}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name="StatisticsPieChart"
-          component={StatisticsScreenPieChart}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
           name="Statistics"
           component={StatisticsScreen}
           options={{headerShown: false}}
         />
 
         <Stack.Screen
+          name="StatisticsPieChart"
+          component={StatisticsScreenPieChart}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
           name="Detail balance"
           component={DetailsScreen}
           options={{headerShown: true, headerShadowVisible: false}}
         />
+        <Stack.Screen
+          name="CurrentBalance"
+          component={CurrentBalanceScreenReload}
+          options={{headerShown: false}}
+        />
+
         <Stack.Screen
           name="ManageMoney"
           component={ManageMoneyScreen}

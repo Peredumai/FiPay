@@ -60,6 +60,17 @@ const styles = EStyleSheet.create({
     alignItems: 'center',
     marginTop: '1.5rem',
   },
+  lineChart: {
+    transform: [{translateX: -40}],
+    paddingLeft: 5,
+    marginTop: 20,
+  },
+  activityText: {
+    color: '#2C3A4B',
+    fontSize: 16,
+    fontFamily: THEME.BOLD_FONT,
+    marginTop: 24,
+  },
 });
 EStyleSheet.build();
 

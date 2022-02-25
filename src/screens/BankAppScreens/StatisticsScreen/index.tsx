@@ -6,10 +6,9 @@ import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 const StatisticsScreen = () => {
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.chartImage}
-        source={require('../../../../assets/images/chart.png')}
-      />
+      <View style={styles.chartImage}>
+        <Text>jdslfjdslfj</Text>
+      </View>
       <View style={styles.purpleBackground}>
         <Text style={styles.headerText}>Statistics</Text>
         <TouchableOpacity style={styles.touchableOpacity}>
