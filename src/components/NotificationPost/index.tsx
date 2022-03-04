@@ -2,7 +2,22 @@ import {Image, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import styles from './styles';
 
-const NotificationPost = ({buttonExist, name, price, imageName, type}) => {
+interface iNotificationPostProps {
+  buttonExist: boolean;
+  name: string;
+  price: string;
+  imageName: string;
+  type: string;
+}
+
+const NotificationPost = ({
+  buttonExist,
+  name,
+  price,
+  imageName,
+  type,
+  onButtonPress,
+}: iNotificationPostProps) => {
   return (
     <View>
       <View style={styles.container}>
@@ -27,7 +42,9 @@ const NotificationPost = ({buttonExist, name, price, imageName, type}) => {
         </View>
         {buttonExist && (
           <View style={styles.button}>
-            <TouchableOpacity style={styles.touchableOpacity}>
+            <TouchableOpacity
+              style={styles.touchableOpacity}
+              onPress={onButtonPress}>
               <Text style={styles.text}>Pay</Text>
             </TouchableOpacity>
           </View>

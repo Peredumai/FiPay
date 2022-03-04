@@ -9,7 +9,7 @@ const styles = EStyleSheet.create({
     flex: 1,
     paddingHorizontal: '1.5rem',
     paddingTop: '1.5rem',
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#FFFFFF',
   },
   header: {
     flexDirection: 'row',

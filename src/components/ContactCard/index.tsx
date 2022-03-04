@@ -21,15 +21,13 @@ const ContactCard = ({name, phoneNum, img}: IContactCardProps) => {
             <Text style={styles.dataText}>{phoneNum}</Text>
           </View>
         </View>
-        {img && (
-          <View>
-            <TouchableOpacity>
-              <Image
-                source={require('../../../../client/assets/images/submitIcon.png')}
-              />
-            </TouchableOpacity>
-          </View>
-        )}
+        <View>
+          <TouchableOpacity>
+            <Image
+              source={require('../../../../client/assets/images/submitIcon.png')}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={styles.line} />
     </View>

@@ -7,6 +7,9 @@ const styles = EStyleSheet.create({
     paddingHorizontal: '1.5rem',
     paddingTop: '0.313rem',
   },
+  scrollContainer: {
+    backgroundColor: '#ffffff',
+  },
 });
 EStyleSheet.build();
 

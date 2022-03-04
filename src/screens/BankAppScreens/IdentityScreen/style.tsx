@@ -9,10 +9,7 @@ const styles = EStyleSheet.create({
     flex: 1,
     backgroundColor: '#ffffff',
     paddingHorizontal: '1.5rem',
-  },
-  scanImage: {
-    width: win.width - 48,
-    resizeMode: 'stretch',
+    paddingTop: 24,
   },
   row: {
     flexDirection: 'row',
@@ -44,6 +41,7 @@ const styles = EStyleSheet.create({
   },
   buttonWrap: {
     marginTop: '8.688rem',
+    marginBottom: 24,
   },
   textinput: {
     height: 'auto',
@@ -51,6 +49,22 @@ const styles = EStyleSheet.create({
     paddingHorizontal: '1rem',
     borderWidth: 0,
     flexGrow: 1,
+  },
+  scanArea: {
+    height: 240,
+    backgroundColor: 'rgba(109, 95, 253, 0.1)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 12,
+  },
+  scanText: {
+    fontSize: 16,
+    color: '#858C94',
+    fontFamily: THEME.BOLD_FONT,
+    marginTop: 12,
+  },
+  mt: {
+    marginTop: '0.25rem',
   },
 });
 EStyleSheet.build();

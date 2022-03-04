@@ -6,7 +6,6 @@ const styles = EStyleSheet.create({
     flex: 1,
     backgroundColor: '#ffffff',
     paddingHorizontal: '1.5rem',
-    paddingTop: '0.313rem',
   },
   card: {
     padding: '1.5rem',
@@ -32,7 +31,8 @@ const styles = EStyleSheet.create({
     color: '#2C3A4B',
   },
   buttonWrap: {
-    marginTop: '3.125rem',
+    marginTop: 179,
+    marginBottom: 24,
   },
 });
 EStyleSheet.build();

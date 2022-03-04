@@ -39,45 +39,10 @@ const cards = [
     accountNumber: '• • •  • • •  • • •  5678',
     imageSource: CardImage,
   },
-  {
-    price: '$1099.95',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
-  {
-    price: '$1499.05',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
-  {
-    price: '$4444.95',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
-  {
-    price: '$3333.95',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
-  {
-    price: '$2222.95',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
-  {
-    price: '$1111.95',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
-  {
-    price: '$1241.95',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
 ];
 
 const HomeScreen = () => {
-  const [cardActive, setCardActive] = useState(0);
+  const [, setCardActive] = useState(0);
 
   const onscroll = ({
     nativeEvent: {

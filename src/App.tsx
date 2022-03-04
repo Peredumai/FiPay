@@ -14,6 +14,7 @@ import AppNavigator from '../navigation/AppNavigator';
 
 const App = () => {
   return <AppNavigator />;
+  // return <Tabs />;
 };
 
 export default App;

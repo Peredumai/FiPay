@@ -5,7 +5,7 @@ import styles from './styles';
 
 export default function SocialScreen() {
   return (
-    <ScrollView>
+    <ScrollView style={styles.scrollContainer}>
       <View style={styles.container}>
         <ContactCard name={'Acourtney Henry'} phoneNum={'+62-878-5558-54'} />
         <ContactCard name={'Acourtney Henry'} phoneNum={'+62-878-5558-54'} />

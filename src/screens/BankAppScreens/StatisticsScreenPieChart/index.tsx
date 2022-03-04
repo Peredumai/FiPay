@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-  ScrollView,
-  TouchableWithoutFeedback,
-} from 'react-native';
+import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
 import React from 'react';
 import styles from './style';
 import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
@@ -14,7 +7,6 @@ import PieChart from 'react-native-pie-chart';
 import ArrowDown from '../../../../assets/images/StatisticsIcons/arrowDownBlue.svg';
 import ArrowUp from '../../../../assets/images/StatisticsIcons/arrowUpRed.svg';
 import {BottomPopup} from './../../../components/BottomPopup/index';
-import Button from './../../../components/Button/index';
 import Filter from '../../../components/Filter';
 
 const StatisticsScreenPieChart = () => {

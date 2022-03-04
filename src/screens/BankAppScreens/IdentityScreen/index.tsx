@@ -3,15 +3,17 @@ import React from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
 
+import ScanCamera from '../../../../assets/images/scanCamera.svg';
+
 const IdentityCardScreen = () => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.container}>
-        <Image
-          style={styles.scanImage}
-          source={require('../../../../assets/images/scanIdentityCard.png')}
-        />
-        <View>
+        <View style={styles.scanArea}>
+          <ScanCamera />
+          <Text style={styles.scanText}>Scan Identity Card</Text>
+        </View>
+        <View style={styles.mt}>
           <Text style={styles.topInputText}>
             ID Card Number <Text style={styles.required}>*</Text>
           </Text>
@@ -54,11 +56,11 @@ const IdentityCardScreen = () => {
           </View>
         </View>
         <View style={styles.buttonWrap}>
-          <Button text="Save" disabled={false} />
+          <Button text="Save" disabled={true} />
         </View>
       </View>
     </ScrollView>
   );
-}
+};
 
 export default IdentityCardScreen;

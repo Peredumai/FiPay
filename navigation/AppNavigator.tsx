@@ -39,8 +39,10 @@ import styles from './styles';
 import {THEME} from './../src/theme';
 import DetailsScreen from '../src/screens/BankAppScreens/DetailsScreen';
 import StatisticsScreenPieChart from '../src/screens/BankAppScreens/StatisticsScreenPieChart';
-import Filter from '../src/components/Filter';
 import CurrentBalanceScreenReload from '../src/screens/BankAppScreens/CurrentBalanceReload';
+import OthersScreen from './../src/screens/BankAppScreens/OthersScreen/index';
+import IdentityCardScreen from './../src/screens/BankAppScreens/IdentityScreen/index';
+import ServicesScreen from './../src/screens/BankAppScreens/ServicesScreen/index';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,33 +51,19 @@ const appNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Statistics"
-          component={StatisticsScreen}
-          options={{headerShown: false}}
+          name="Services"
+          component={ServicesScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <Image
+                style={styles.iconRight}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
+          }}
         />
-
-        <Stack.Screen
-          name="StatisticsPieChart"
-          component={StatisticsScreenPieChart}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name="Detail balance"
-          component={DetailsScreen}
-          options={{headerShown: true, headerShadowVisible: false}}
-        />
-        <Stack.Screen
-          name="CurrentBalance"
-          component={CurrentBalanceScreenReload}
-          options={{headerShown: false}}
-        />
-
-        <Stack.Screen
-          name="ManageMoney"
-          component={ManageMoneyScreen}
-          options={{headerShown: true}}
-        />
-
         <Stack.Screen
           name="BudgetCalculation"
           component={BudgetCalculationScreen}
@@ -94,6 +82,80 @@ const appNavigator = () => {
             ),
           }}
         />
+        <Stack.Screen
+          name="CheckExchange"
+          component={CheckExchangeScreen}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="Profiles"
+          component={ProfileScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <Image
+                style={styles.iconRight}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
+          }}
+        />
+        <Stack.Screen
+          name="IdentityCard"
+          component={IdentityCardScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <Image
+                style={styles.iconRight}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
+          }}
+        />
+        <Stack.Screen
+          name="Others"
+          component={OthersScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <Image
+                style={styles.iconRight}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
+          }}
+        />
+        <Stack.Screen
+          name="CurrentBalance"
+          component={CurrentBalanceScreenReload}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="StatisticsPieChart"
+          component={StatisticsScreenPieChart}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Statistics"
+          component={StatisticsScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Detail balance"
+          component={DetailsScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+        <Stack.Screen
+          name="ManageMoney"
+          component={ManageMoneyScreen}
+          options={{headerShown: true}}
+        />
+
         <Stack.Screen
           name="FlightTicket"
           component={FlightTicketScreen}
@@ -122,13 +184,11 @@ const appNavigator = () => {
           component={CreateAccountInfoScreen}
           options={{headerShown: false}}
         />
-
         <Stack.Screen
           name="SendMoney"
           component={SendMoneyScreen}
           options={{headerShown: true}}
         />
-
         <Stack.Screen
           name="Splash"
           component={SplashScreen}
@@ -141,16 +201,10 @@ const appNavigator = () => {
         />
 
         <Stack.Screen
-          name="CheckExchange"
-          component={CheckExchangeScreen}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
           name="ExchangeMoney"
           component={ExchangeMoneyScreen}
           options={{headerShown: false}}
         />
-
         <Stack.Screen
           name="Link new card2"
           component={LinkNewCardScreen2}
@@ -167,7 +221,6 @@ const appNavigator = () => {
             headerShadowVisible: false,
           }}
         />
-
         <Stack.Screen
           name="Link new card"
           component={LinkNewCardScreen}
@@ -176,7 +229,6 @@ const appNavigator = () => {
             headerShadowVisible: false,
           }}
         />
-
         <Stack.Screen
           name="Notification Settings"
           component={NotificationSettingsScreen}
@@ -195,7 +247,6 @@ const appNavigator = () => {
           component={SuccessfulScreen}
           options={{headerShown: false}}
         />
-
         <Stack.Screen
           name="CreateAccount"
           component={CreateAccountScreen}
@@ -211,11 +262,6 @@ const appNavigator = () => {
           component={LoginSecurityScreen}
           options={{headerShown: true}}
         />
-        <Stack.Screen
-          name="ProfileScreen"
-          component={ProfileScreen}
-          options={{headerShown: false}}
-        />
 
         <Stack.Screen
           name="NewPassword"
@@ -227,13 +273,11 @@ const appNavigator = () => {
           component={ForgotPasswordScreen}
           options={{headerShown: false}}
         />
-
         <Stack.Screen
           name="VerificationCode"
           component={VerificationCodeScreen}
           options={{headerShown: false}}
         />
-
         <Stack.Screen
           name="FaceAuth"
           component={FaceAuthScreen}
