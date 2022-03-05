@@ -43,6 +43,8 @@ import CurrentBalanceScreenReload from '../src/screens/BankAppScreens/CurrentBal
 import OthersScreen from './../src/screens/BankAppScreens/OthersScreen/index';
 import IdentityCardScreen from './../src/screens/BankAppScreens/IdentityScreen/index';
 import ServicesScreen from './../src/screens/BankAppScreens/ServicesScreen/index';
+import ExpensesScreen from '../src/screens/BankAppScreens/ExpensesScreen/index';
+import TotalSpentScreen from '../src/screens/BankAppScreens/TotalSpentScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +52,37 @@ const appNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="TotalSpent"
+          component={TotalSpentScreen}
+          options={{
+            headerShown: true,
+            headerTintColor: '#ffffff',
+            headerStyle: {
+              backgroundColor: THEME.PURPLE_COLOR,
+            },
+            headerShadowVisible: false,
+          }}
+        />
+        <Stack.Screen
+          name="Detail balance"
+          component={DetailsScreen}
+          options={{headerShown: true, headerShadowVisible: false}}
+        />
+        <Stack.Screen
+          name="Expenses"
+          component={ExpensesScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <Image
+                style={styles.iconRight}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
+          }}
+        />
         <Stack.Screen
           name="Services"
           component={ServicesScreen}
@@ -145,11 +178,7 @@ const appNavigator = () => {
           component={StatisticsScreen}
           options={{headerShown: false}}
         />
-        <Stack.Screen
-          name="Detail balance"
-          component={DetailsScreen}
-          options={{headerShown: true, headerShadowVisible: false}}
-        />
+
         <Stack.Screen
           name="ManageMoney"
           component={ManageMoneyScreen}
