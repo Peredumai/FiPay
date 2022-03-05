@@ -45,6 +45,7 @@ import IdentityCardScreen from './../src/screens/BankAppScreens/IdentityScreen/i
 import ServicesScreen from './../src/screens/BankAppScreens/ServicesScreen/index';
 import ExpensesScreen from '../src/screens/BankAppScreens/ExpensesScreen/index';
 import TotalSpentScreen from '../src/screens/BankAppScreens/TotalSpentScreen';
+import AccountAnalyticsScreen from '../src/screens/BankAppScreens/AccountAnalyticsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -52,6 +53,11 @@ const appNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="AccountAnalytics"
+          component={AccountAnalyticsScreen}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name="TotalSpent"
           component={TotalSpentScreen}
