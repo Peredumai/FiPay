@@ -42,6 +42,13 @@ const styles = EStyleSheet.create({
     marginTop: 4,
     textAlign: 'center',
   },
+  cardsContainer: {
+    marginTop: 24,
+    marginRight: -10,
+    flexDirection: 'row',
+    overflow: 'visible',
+    marginBottom: 24,
+  },
 });
 EStyleSheet.build();
 

@@ -54,9 +54,18 @@ const appNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="AccountAnalytics"
-          component={AccountAnalyticsScreen}
-          options={{headerShown: false}}
+          name="Detail balance"
+          component={DetailsScreen}
+          options={{
+            headerShown: true,
+            headerShadowVisible: false,
+            headerLeft: () => (
+              <Image
+                style={styles.iconLeft}
+                source={require('../assets/images/arrowBack.png')}
+              />
+            ),
+          }}
         />
         <Stack.Screen
           name="TotalSpent"
@@ -71,10 +80,11 @@ const appNavigator = () => {
           }}
         />
         <Stack.Screen
-          name="Detail balance"
-          component={DetailsScreen}
-          options={{headerShown: true, headerShadowVisible: false}}
+          name="AccountAnalytics"
+          component={AccountAnalyticsScreen}
+          options={{headerShown: false}}
         />
+
         <Stack.Screen
           name="Expenses"
           component={ExpensesScreen}
@@ -83,7 +93,7 @@ const appNavigator = () => {
             headerShadowVisible: false,
             headerLeft: () => (
               <Image
-                style={styles.iconRight}
+                style={styles.iconLeft}
                 source={require('../assets/images/arrowBack.png')}
               />
             ),
@@ -97,7 +107,7 @@ const appNavigator = () => {
             headerShadowVisible: false,
             headerLeft: () => (
               <Image
-                style={styles.iconRight}
+                style={styles.iconLeft}
                 source={require('../assets/images/arrowBack.png')}
               />
             ),
@@ -115,7 +125,7 @@ const appNavigator = () => {
             },
             headerLeft: () => (
               <Image
-                style={styles.iconRight}
+                style={styles.iconLeft}
                 source={require('../assets/images/arrowBack.png')}
               />
             ),
@@ -135,7 +145,7 @@ const appNavigator = () => {
             headerShadowVisible: false,
             headerLeft: () => (
               <Image
-                style={styles.iconRight}
+                style={styles.iconLeft}
                 source={require('../assets/images/arrowBack.png')}
               />
             ),
@@ -149,7 +159,7 @@ const appNavigator = () => {
             headerShadowVisible: false,
             headerLeft: () => (
               <Image
-                style={styles.iconRight}
+                style={styles.iconLeft}
                 source={require('../assets/images/arrowBack.png')}
               />
             ),
@@ -163,7 +173,7 @@ const appNavigator = () => {
             headerShadowVisible: false,
             headerLeft: () => (
               <Image
-                style={styles.iconRight}
+                style={styles.iconLeft}
                 source={require('../assets/images/arrowBack.png')}
               />
             ),

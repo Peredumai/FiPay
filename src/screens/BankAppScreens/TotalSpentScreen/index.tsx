@@ -1,7 +1,8 @@
-import {View, Text, Dimensions} from 'react-native';
+import {View, Text, Dimensions, ScrollView} from 'react-native';
 import React from 'react';
 import styles from './style';
 import {VictoryPie} from 'victory-native';
+import MiniCard from '../../../components/MiniCard';
 
 const win = Dimensions.get('window');
 
@@ -46,6 +47,14 @@ const TotalSpentScreen = () => {
           }}
         />
       </View>
+      <ScrollView
+        showsHorizontalScrollIndicator={false}
+        horizontal
+        style={styles.cardsContainer}>
+        <MiniCard price={939} text="All" color="#6D5FFD" />
+        <MiniCard price={500} text="Income" color="#FFB800" />
+        <MiniCard price={456} text="Outcome" color="#FF1843" />
+      </ScrollView>
     </View>
   );
 };

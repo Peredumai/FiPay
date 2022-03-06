@@ -41,7 +41,7 @@ const styles = EStyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  historyArea: {
+  cardsArea: {
     flex: 1,
   },
   labelPurple: {
@@ -70,6 +70,13 @@ const styles = EStyleSheet.create({
     fontSize: 16,
     fontFamily: THEME.BOLD_FONT,
     marginTop: 24,
+  },
+  cardsContainer: {
+    marginTop: 24,
+    marginRight: -10,
+    flexDirection: 'row',
+    overflow: 'visible',
+    marginBottom: 24,
   },
 });
 EStyleSheet.build();

@@ -1,4 +1,4 @@
-import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
+import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
 import React, {useState} from 'react';
 import styles from './style';
 import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
@@ -6,7 +6,6 @@ import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 import {Dimensions} from 'react-native';
 
 import {LineChart} from 'react-native-chart-kit';
-import ChartLabel from '../../../../assets/images/ChartLabel.svg';
 import {THEME} from '../../../theme';
 
 const AccountAnalyticsScreen = () => {
@@ -53,7 +52,6 @@ const AccountAnalyticsScreen = () => {
                 withOuterLines={false}
                 withHorizontalLines={true}
                 withHorizontalLabels={true}
-                segments={5}
                 yLabelsOffset={4}
                 formatYLabel={() => yLabelIterator.next().value}
                 data={{
@@ -81,7 +79,7 @@ const AccountAnalyticsScreen = () => {
                         44, 24, 42, 32, 2, 43, 13, 43, 13, 15, 60, 43, 34, 11,
                         45, 60, 43, 32, 53, 42, 21, 13, 64, 13, 57, 43, 24, 44,
                         24, 42, 32, 2, 43, 13, 43, 13, 15, 60, 43, 34, 11, 45,
-                        60, 43, 32, 53, 42, 21, 13, 64
+                        60, 43, 32, 53, 42, 21, 13, 64,
                       ],
                       strokeWidth: 3,
                       color: () => `#6D5FFD`,

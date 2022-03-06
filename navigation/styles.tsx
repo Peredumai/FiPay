@@ -5,7 +5,8 @@ const styles = EStyleSheet.create({
   iconLeft: {
     marginTop: '0.75rem',
     marginBottom: '0.75rem',
-    marginLeft: '0.75rem',
+    marginLeft: 5,
+    marginRight: 16,
   },
   iconRight: {
     marginTop: '0.75rem',
