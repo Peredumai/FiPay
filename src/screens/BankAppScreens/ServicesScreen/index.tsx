@@ -11,6 +11,7 @@ import Create from '../../../../assets/images/ServicesScreen/4.svg';
 import Credit from '../../../../assets/images/ServicesScreen/5.svg';
 
 import ArrowRight from '../../../../assets/images/ServicesScreen/arrowRight.svg';
+import Line from './../../../components/Line/index';
 
 const ServicesScreen = () => {
   return (
@@ -30,7 +31,7 @@ const ServicesScreen = () => {
             </View>
           </View>
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={[styles.row, styles.wrapper]}>
           <View style={[styles.firstSection, styles.yellowColorDark]}>
@@ -43,7 +44,7 @@ const ServicesScreen = () => {
             </View>
           </View>
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={[styles.row, styles.wrapper]}>
           <View style={[styles.firstSection, styles.blueColorDark]}>
@@ -56,7 +57,7 @@ const ServicesScreen = () => {
             </View>
           </View>
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={[styles.row, styles.wrapper]}>
           <View style={[styles.firstSection, styles.redColorDark]}>
@@ -69,7 +70,7 @@ const ServicesScreen = () => {
             </View>
           </View>
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={[styles.row, styles.wrapper]}>
           <View style={[styles.firstSection, styles.purpleColorDark]}>
@@ -82,7 +83,7 @@ const ServicesScreen = () => {
             </View>
           </View>
         </View>
-        <View style={styles.line} />
+        <Line />
       </View>
     </ScrollView>
   );

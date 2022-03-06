@@ -1,6 +1,7 @@
 import {Text, TouchableOpacity, View, Image} from 'react-native';
 import React from 'react';
 import styles from './styles';
+import Line from './../Line/index';
 
 const TransacrionHistoryCard = () => {
   return (
@@ -22,7 +23,7 @@ const TransacrionHistoryCard = () => {
           />
         </View>
       </View>
-      <View style={styles.line} />
+      <Line />
     </TouchableOpacity>
   );
 };

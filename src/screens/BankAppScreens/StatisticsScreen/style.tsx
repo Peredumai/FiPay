@@ -1,12 +1,14 @@
-import {Dimensions} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import {THEME} from './../../../theme';
 
-const win = Dimensions.get('window');
-
 const styles = EStyleSheet.create({
-  container: {
+  saveContainer: {
     flex: 1,
+  },
+  fitSpace: {
+    flexGrow: 1,
+  },
+  container: {
     backgroundColor: '#ffffff',
   },
   purpleBackground: {
@@ -121,6 +123,9 @@ const styles = EStyleSheet.create({
   },
   ml: {
     marginLeft: 25.25,
+  },
+  historyContainer: {
+    marginBottom: 24,
   },
 });
 EStyleSheet.build();

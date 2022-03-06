@@ -130,11 +130,6 @@ const styles = EStyleSheet.create({
   cardContainer: {
     padding: 24,
   },
-  line: {
-    width: 'auto',
-    borderWidth: 1,
-    borderColor: '#EBEEF2',
-  },
 });
 EStyleSheet.build();
 

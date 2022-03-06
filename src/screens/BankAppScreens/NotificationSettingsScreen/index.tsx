@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import styles from './style';
 
 import ToggleSwitch from 'toggle-switch-react-native';
+import Line from './../../../components/Line/index';
 
 const NotificationSettingsScreen = () => {
   const [buySomething, setBuySomething] = useState(false);
@@ -15,7 +16,7 @@ const NotificationSettingsScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.headerText}>Notifiy me when</Text>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <Text style={styles.labelText}>Buy something</Text>
@@ -27,7 +28,7 @@ const NotificationSettingsScreen = () => {
           onToggle={setBuySomething}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <Text style={styles.labelText}>Receive money</Text>
@@ -39,7 +40,7 @@ const NotificationSettingsScreen = () => {
           onToggle={setReceiveMoney}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <Text style={styles.labelText}>Send payments</Text>
@@ -51,7 +52,7 @@ const NotificationSettingsScreen = () => {
           onToggle={setSendPayments}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <Text style={styles.labelText}>Receive a money request</Text>
@@ -63,7 +64,7 @@ const NotificationSettingsScreen = () => {
           onToggle={setMoneyRequest}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <Text style={styles.labelText}>New promo availables</Text>
@@ -75,7 +76,7 @@ const NotificationSettingsScreen = () => {
           onToggle={setNewPromo}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <Text style={styles.labelText}>New service availables</Text>
@@ -87,7 +88,7 @@ const NotificationSettingsScreen = () => {
           onToggle={setNewService}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
     </View>
   );
 };

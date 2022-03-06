@@ -47,11 +47,6 @@ const styles = EStyleSheet.create({
     paddingLeft: '1rem',
     justifyContent: 'space-between',
   },
-  line: {
-    width: 'auto',
-    borderWidth: 1,
-    borderColor: '#EBEEF2',
-  },
 });
 EStyleSheet.build();
 

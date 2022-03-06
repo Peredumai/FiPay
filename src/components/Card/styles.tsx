@@ -1,4 +1,4 @@
-import { Dimensions } from 'react-native';
+import {Dimensions} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import {THEME} from './../../theme';
 const win = Dimensions.get('window');
@@ -21,7 +21,7 @@ const styles = EStyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
-  price: {
+  balance: {
     fontFamily: THEME.BOLD_FONT,
     fontSize: '2.063rem',
     color: '#FEFEFE',

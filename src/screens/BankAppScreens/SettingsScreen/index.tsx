@@ -1,6 +1,7 @@
 import {View, Text, Image, ScrollView} from 'react-native';
 import React from 'react';
 import styles from './style';
+import Line from './../../../components/Line/index';
 
 const SettingsScreen = () => {
   return (
@@ -19,7 +20,7 @@ const SettingsScreen = () => {
             source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
           />
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={styles.wrapper}>
           <View style={styles.row}>
@@ -34,7 +35,7 @@ const SettingsScreen = () => {
             source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
           />
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={styles.wrapper}>
           <View style={styles.row}>
@@ -49,7 +50,7 @@ const SettingsScreen = () => {
             source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
           />
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={styles.wrapper}>
           <View style={styles.row}>
@@ -64,7 +65,7 @@ const SettingsScreen = () => {
             source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
           />
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={styles.wrapper}>
           <View style={styles.row}>
@@ -79,7 +80,7 @@ const SettingsScreen = () => {
             source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
           />
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={styles.wrapper}>
           <View style={styles.row}>
@@ -94,7 +95,7 @@ const SettingsScreen = () => {
             source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
           />
         </View>
-        <View style={styles.line} />
+        <Line />
 
         <View style={styles.wrapper}>
           <View style={styles.row}>
@@ -109,7 +110,7 @@ const SettingsScreen = () => {
             source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
           />
         </View>
-        <View style={styles.line} />
+        <Line />
       </View>
     </ScrollView>
   );

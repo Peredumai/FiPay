@@ -15,7 +15,7 @@ import FaceAuthScreen from '../src/screens/SignScreens/FaceAuthScreen';
 import VerificationCodeScreen from '../src/screens/SignScreens/VerificationCodeScreen';
 import SuccessfulScreen from '../src/screens/SignScreens/SuccesfulScreen/index';
 import StatisticsScreen from '../src/screens/BankAppScreens/StatisticsScreen';
-import CurrentBalanceScreen from './../src/screens/BankAppScreens/CurrentBalance/index';
+// import CurrentBalanceScreen from './../src/screens/BankAppScreens/CurrentBalance/index';
 import ProfileScreen from '../src/screens/BankAppScreens/ProfileScreen';
 import LoginSecurityScreen from '../src/screens/BankAppScreens/LoginSecurityScreen';
 import CreateAccountInfoScreen from '../src/screens/SignScreens/CreateAccountInfoScreen';

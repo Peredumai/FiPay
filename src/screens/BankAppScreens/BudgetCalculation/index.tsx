@@ -4,6 +4,7 @@ import styles from './style';
 
 import arrowDown from '../../../../assets/images/Common/arrowDropDownPurple.png';
 import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
+import Line from './../../../components/Line/index';
 
 const BudgetCalculationScreen = () => {
   return (
@@ -19,7 +20,7 @@ const BudgetCalculationScreen = () => {
           </View>
           <Text style={styles.bigPrice}>$1299.60</Text>
 
-          <View style={styles.line} />
+          <Line />
 
           <View style={styles.cardsContainer}>
             <View style={styles.rowBetween}>

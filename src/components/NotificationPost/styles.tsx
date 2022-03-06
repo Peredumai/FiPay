@@ -2,11 +2,6 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 import {THEME} from './../../theme';
 
 const styles = EStyleSheet.create({
-  line: {
-    width: 'auto',
-    borderWidth: 1,
-    borderColor: '#EBEEF2',
-  },
   timeText: {
     color: '#6D7580',
     fontSize: '0.688rem',

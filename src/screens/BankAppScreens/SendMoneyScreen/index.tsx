@@ -15,6 +15,7 @@ import Shop from '../../../../assets//images/SendMoneyIcons/shop.png';
 import Wifi from '../../../../assets//images/SendMoneyIcons/wifi.png';
 import Wallet from '../../../../assets//images/SendMoneyIcons/wallet.png';
 import ContactCard from './../../../components/ContactCard/index';
+import Line from './../../../components/Line/index';
 
 const SendMoneyScreen = () => {
   return (
@@ -46,7 +47,7 @@ const SendMoneyScreen = () => {
       <TouchableOpacity onPress={() => {}} style={styles.touchableOpacity}>
         <Text style={styles.text}>See all services</Text>
       </TouchableOpacity>
-      <View style={styles.line} />
+      <Line />
 
       <Text style={styles.header}>Contact</Text>
 

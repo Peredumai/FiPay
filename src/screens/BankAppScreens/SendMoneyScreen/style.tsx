@@ -68,12 +68,6 @@ const styles = EStyleSheet.create({
     marginTop: 24,
     borderWidth: '0.125rem',
   },
-  line: {
-    width: 'auto',
-    borderWidth: 1,
-    borderColor: '#EBEEF2',
-    marginVertical: 24,
-  },
   header: {
     color: '#2C3A4B',
     fontSize: 20,

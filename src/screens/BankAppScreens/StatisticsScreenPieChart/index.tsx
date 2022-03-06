@@ -8,6 +8,7 @@ import ArrowDown from '../../../../assets/images/StatisticsIcons/arrowDownBlue.s
 import ArrowUp from '../../../../assets/images/StatisticsIcons/arrowUpRed.svg';
 import {BottomPopup} from './../../../components/BottomPopup/index';
 import Filter from '../../../components/Filter';
+import Line from './../../../components/Line/index';
 
 const StatisticsScreenPieChart = () => {
   let popupRef = React.createRef();
@@ -54,7 +55,7 @@ const StatisticsScreenPieChart = () => {
                 </View>
               </View>
             </View>
-            <View style={styles.line} />
+            <Line />
             <View style={styles.chart}>
               <PieChart
                 widthAndHeight={widthAndHeight}

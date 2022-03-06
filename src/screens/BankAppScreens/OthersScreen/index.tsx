@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import styles from './style';
 
 import ToggleSwitch from 'toggle-switch-react-native';
+import Line from './../../../components/Line/index';
 
 const OthersScreen = () => {
   const [switchValue, setSwitchValue] = useState(false);
@@ -30,7 +31,7 @@ const OthersScreen = () => {
           onToggle={toggleSwitch}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <View style={styles.row}>
@@ -45,7 +46,7 @@ const OthersScreen = () => {
           source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <View style={styles.row}>
@@ -63,7 +64,7 @@ const OthersScreen = () => {
           />
         </View>
       </View>
-      <View style={styles.line} />
+      <Line />
       <View style={styles.wrapper}>
         <View style={styles.row}>
           <Image
@@ -77,7 +78,7 @@ const OthersScreen = () => {
           source={require('../../../../assets/images/OthersScreenIcons/arrowRight.png')}
         />
       </View>
-      <View style={styles.line} />
+      <Line />
     </View>
   );
 };

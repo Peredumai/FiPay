@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import styles from './style';
 
 import ToggleSwitch from 'toggle-switch-react-native';
+import Line from './../../../components/Line/index';
 
 const LoginSecurityScreen = () => {
   const [switchValue, setSwitchValue] = useState(false);
@@ -32,7 +33,7 @@ const LoginSecurityScreen = () => {
       </View>
       <Text style={styles.bottomText}>(Recommended)</Text>
 
-      <View style={styles.line} />
+      <Line />
 
       <View style={styles.wrapper}>
         <View style={styles.row}>
@@ -56,7 +57,7 @@ const LoginSecurityScreen = () => {
           styles.bottomText
         }>{`Not recommended if you share your \ndevice`}</Text>
 
-      <View style={styles.line} />
+      <Line />
       <View style={styles.wrapper}>
         <View style={styles.row}>
           <Image
@@ -79,7 +80,7 @@ const LoginSecurityScreen = () => {
           styles.bottomText
         }>{`Not recommended if you share your \ndevice`}</Text>
 
-      <View style={styles.line} />
+      <Line />
     </View>
   );
 }

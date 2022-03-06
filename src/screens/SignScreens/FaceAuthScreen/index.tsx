@@ -2,6 +2,7 @@ import {View, Text, Image} from 'react-native';
 import React from 'react';
 import styles from './style';
 import FaceAuth from '../../../../assets/images/Common/FaceAuth.svg';
+import Line from './../../../components/Line/index';
 
 const FaceAuthScreen = () => {
   return (
@@ -12,7 +13,7 @@ const FaceAuthScreen = () => {
         />
       </View>
       <View style={styles.innerContainer}>
-        <View style={styles.line} />
+        <Line />
         <FaceAuth width={80} height={80} />
         <Text style={styles.faceText}>Face Authentication</Text>
         <Text style={styles.pointText}>

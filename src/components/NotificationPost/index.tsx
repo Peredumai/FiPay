@@ -1,6 +1,7 @@
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import styles from './styles';
+import Line from './../Line/index';
 
 interface iNotificationPostProps {
   buttonExist: boolean;
@@ -51,7 +52,7 @@ const NotificationPost = ({
         )}
       </View>
 
-      <View style={styles.line} />
+      <Line />
     </View>
   );
 };

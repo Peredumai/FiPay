@@ -1,6 +1,7 @@
 import {Text, TouchableOpacity, View, Image} from 'react-native';
 import React from 'react';
 import styles from './styles';
+import Line from '../Line';
 
 const UpcomingBillCard = () => {
   return (
@@ -21,7 +22,7 @@ const UpcomingBillCard = () => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={styles.line} />
+      <Line />
     </View>
   );
 };

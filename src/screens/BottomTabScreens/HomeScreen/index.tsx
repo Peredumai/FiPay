@@ -20,29 +20,13 @@ interface IRenderItem {
 
 const win = Dimensions.get('window');
 
-import CardImage from '../../../../assets/images/Common/Card.png';
-import CardRedImage from '../../../../assets/images/Common/CardRed.png';
-
-const cards = [
-  {
-    price: '$4499.25',
-    accountNumber: '• • •  • • •  • • •  6544',
-    imageSource: CardImage,
-  },
-  {
-    price: '$1399.55',
-    accountNumber: '• • •  • • •  • • •  1234',
-    imageSource: CardRedImage,
-  },
-  {
-    price: '$1499.95',
-    accountNumber: '• • •  • • •  • • •  5678',
-    imageSource: CardImage,
-  },
-];
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../../store';
 
 const HomeScreen = () => {
   const [, setCardActive] = useState(0);
+
+  const cards = useSelector((state: RootState) => state.card.cards);
 
   const onscroll = ({
     nativeEvent: {
@@ -56,50 +40,54 @@ const HomeScreen = () => {
 
   const renderItem = ({item, index}: IRenderItem) => (
     <Card
-      price={item.price}
+      balance={item.balance}
+      color={item.color}
       accountNumber={item.accountNumber}
-      imageSource={item.imageSource}
       style={index === cards.length - 1 ? styles.mr : null}
     />
   );
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>Good morning, John!</Text>
-        <Image
-          source={require('../../../../assets/images/Common/history.png')}
-        />
-      </View>
+    <ScrollView
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle={styles.fitSpace}>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.headerText}>Good morning, John!</Text>
+          <Image
+            source={require('../../../../assets/images/Common/history.png')}
+          />
+        </View>
 
-      <View style={styles.wrap}>
-        <FlatList
-          data={cards}
-          horizontal
-          onScroll={onscroll}
-          decelerationRate="fast"
-          renderItem={renderItem}
-          keyExtractor={item => item.price}
-          pagingEnabled
-          snapToInterval={win.width - 36}
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{marginHorizontal: 24}}
-        />
-      </View>
-      <View style={styles.upcomingView}>
-        <Text style={styles.upcomingText}>Upcomming bill</Text>
-        <TouchableOpacity>
-          <Text style={styles.labelPurple}>See All</Text>
-        </TouchableOpacity>
-      </View>
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <UpcomingBillCard />
-        <UpcomingBillCard />
-        <UpcomingBillCard />
-        <UpcomingBillCard />
-        <UpcomingBillCard />
-      </ScrollView>
-    </SafeAreaView>
+        <View style={styles.wrap}>
+          <FlatList
+            data={cards}
+            horizontal
+            onScroll={onscroll}
+            decelerationRate="fast"
+            renderItem={renderItem}
+            keyExtractor={item => item.balance}
+            pagingEnabled
+            snapToInterval={win.width - 36}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.flatListStyle}
+          />
+        </View>
+        <View style={styles.upcomingView}>
+          <Text style={styles.upcomingText}>Upcomming bill</Text>
+          <TouchableOpacity>
+            <Text style={styles.labelPurple}>See All</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.upcomingBillContainer}>
+          <UpcomingBillCard />
+          <UpcomingBillCard />
+          <UpcomingBillCard />
+          <UpcomingBillCard />
+          <UpcomingBillCard />
+        </View>
+      </SafeAreaView>
+    </ScrollView>
   );
 };
 

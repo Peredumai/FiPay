@@ -41,12 +41,6 @@ const styles = EStyleSheet.create({
     justifyContent: 'space-between',
     flexGrow: 1,
   },
-  line: {
-    width: 'auto',
-    borderWidth: 1,
-    borderColor: '#EBEEF2',
-    marginTop: 24,
-  },
   purpleColor: {
     backgroundColor: 'rgba(109, 95, 253, 0.1)',
   },

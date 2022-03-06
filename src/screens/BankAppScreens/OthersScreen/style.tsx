@@ -7,11 +7,6 @@ const styles = EStyleSheet.create({
     backgroundColor: '#ffffff',
     paddingHorizontal: '1.5rem',
   },
-  line: {
-    width: 'auto',
-    borderWidth: 1,
-    borderColor: '#EBEEF2',
-  },
   wrapper: {
     flexDirection: 'row',
     alignItems: 'center',

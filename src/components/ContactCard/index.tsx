@@ -1,6 +1,7 @@
 import {Text, TouchableOpacity, View, Image} from 'react-native';
 import React from 'react';
 import styles from './styles';
+import Line from './../Line/index';
 
 interface IContactCardProps {
   name: string;
@@ -29,7 +30,7 @@ const ContactCard = ({name, phoneNum, img}: IContactCardProps) => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={styles.line} />
+      <Line />
     </View>
   );
 };
