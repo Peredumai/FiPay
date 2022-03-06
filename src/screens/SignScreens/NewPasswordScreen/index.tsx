@@ -12,8 +12,8 @@ import CheckBox from '@react-native-community/checkbox';
 import styles from './style';
 import Button from './../../../components/Button/index';
 
-import eye from '../../../../assets/images/eye.png';
-import hiddenEye from '../../../../assets/images/hidden_eye.png';
+import eye from '../../../../assets/images/Common/eye.png';
+import hiddenEye from '../../../../assets/images/Common/hidden_eye.png';
 
 const NewPasswordScreen = () => {
   const [password, setPassword] = useState<string>('');
@@ -48,7 +48,7 @@ const NewPasswordScreen = () => {
     <View style={styles.container}>
       <Image
         style={styles.logoImage}
-        source={require('../../../../assets/images/fiLogo.png')}
+        source={require('../../../../assets/images/Common/fiLogo.png')}
       />
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.innerContainer}>

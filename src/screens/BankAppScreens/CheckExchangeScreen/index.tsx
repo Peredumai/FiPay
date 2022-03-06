@@ -1,7 +1,7 @@
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
 
-import CircleDown from '../../../../assets/images/circleDown.png';
+import CircleDown from '../../../../assets/images/Common/circleDown.png';
 import Dropdown from '../../../components/DropDown';
 import styles from './style';
 
@@ -19,13 +19,13 @@ const CheckExchangeScreen = () => {
           </View>
           <View style={styles.row}>
             <View style={styles.row}>
-              <TouchableOpacity style={styles.row}>
+              <TouchableOpacity style={styles.rowNear}>
                 <Dropdown
                   text={'currencyText'}
                   type={'currencyPicker'}
                   initial={fromCurrencyValue}
                   change={setFromCurrencyValue}
-                  isHalfWidth={false}
+                  isHalfWidth={true}
                 />
               </TouchableOpacity>
             </View>
@@ -41,13 +41,13 @@ const CheckExchangeScreen = () => {
           </View>
           <View style={styles.row}>
             <View style={styles.row}>
-              <TouchableOpacity style={styles.row}>
+              <TouchableOpacity style={styles.rowNear}>
                 <Dropdown
                   text={'currencyText'}
                   type={'currencyPicker'}
-                  initial={toCurrencyValue2}
-                  change={setToCurrencyValue2}
-                  isHalfWidth={false}
+                  initial={fromCurrencyValue}
+                  change={setToCurrencyValue}
+                  isHalfWidth={true}
                 />
               </TouchableOpacity>
             </View>
@@ -63,13 +63,13 @@ const CheckExchangeScreen = () => {
           </View>
           <View style={styles.row}>
             <View style={styles.row}>
-              <TouchableOpacity style={styles.row}>
+              <TouchableOpacity style={styles.rowNear}>
                 <Dropdown
                   text={'currencyText'}
                   type={'currencyPicker'}
-                  initial={toCurrencyValue}
-                  change={setToCurrencyValue}
-                  isHalfWidth={false}
+                  initial={fromCurrencyValue}
+                  change={setToCurrencyValue2}
+                  isHalfWidth={true}
                 />
               </TouchableOpacity>
             </View>

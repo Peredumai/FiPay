@@ -5,7 +5,9 @@ import styles from './style';
 const TransactionSuccessfulScreen = () => {
   return (
     <View style={styles.container}>
-      <Image source={require('../../../../assets/images/CheckCircle.png')} />
+      <Image
+        source={require('../../../../assets/images/Common/CheckCircle.png')}
+      />
       <Text style={styles.successful}>Successful!</Text>
       <Text style={styles.info}>Your transaction is successful.</Text>
       <Text style={styles.info}> Thank for using our services.</Text>

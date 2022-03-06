@@ -2,7 +2,7 @@ import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
 import React from 'react';
 import styles from './style';
 
-import arrowDown from '../../../../assets/images/arrowDropDownPurple.png';
+import arrowDown from '../../../../assets/images/Common/arrowDropDownPurple.png';
 import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 
 const BudgetCalculationScreen = () => {

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
 
-import ScanCamera from '../../../../assets/images/scanCamera.svg';
+import ScanCamera from '../../../../assets/images/Common/scanCamera.svg';
 
 const IdentityCardScreen = () => {
   return (
@@ -51,7 +51,7 @@ const IdentityCardScreen = () => {
             />
             <Image
               style={styles.icon}
-              source={require('../../../../assets/images/calendarIcon.png')}
+              source={require('../../../../assets/images/Common/calendarIcon.png')}
             />
           </View>
         </View>

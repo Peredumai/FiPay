@@ -10,7 +10,7 @@ import React, {useCallback, useMemo, useState} from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
 
-import succeedIcon from '../../../../assets/images/succeed.png';
+import succeedIcon from '../../../../assets/images/Common/succeed.png';
 
 const ForgotPasswordScreen = () => {
   const [login, setLogin] = useState<string>('');

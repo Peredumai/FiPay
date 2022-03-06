@@ -1,7 +1,7 @@
 import {Text, Image, View, ImageBackground} from 'react-native';
 import React from 'react';
 import styles from './styles';
-import AmazonImg from '../../../assets/images/Amazon.png';
+import AmazonImg from '../../../assets/images/Common/Amazon.png';
 
 export interface ICardProps {
   price: string;

@@ -2,7 +2,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import styles from './styles';
 
-import Monetization from '../../../assets/images/Monetization.svg';
+import Monetization from '../../../assets/images/Common/Monetization.svg';
 
 const PayModal = ({onCancel}) => {
   return (

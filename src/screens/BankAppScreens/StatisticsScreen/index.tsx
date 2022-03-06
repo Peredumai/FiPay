@@ -6,7 +6,7 @@ import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 import {Dimensions} from 'react-native';
 
 import {LineChart} from 'react-native-chart-kit';
-import ChartLabel from '../../../../assets/images/ChartLabel.svg';
+import ChartLabel from '../../../../assets/images/Common/ChartLabel.svg';
 import {THEME} from '../../../theme';
 
 const StatisticsScreen = () => {
@@ -110,7 +110,7 @@ const StatisticsScreen = () => {
         <TouchableOpacity style={styles.touchableOpacity}>
           <Text style={styles.text}>This Week</Text>
           <Image
-            source={require('../../../../assets/images/arrowDropDown.png')}
+            source={require('../../../../assets/images/Common/arrowDropDown.png')}
           />
         </TouchableOpacity>
       </View>

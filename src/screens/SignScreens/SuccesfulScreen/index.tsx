@@ -5,7 +5,9 @@ import styles from './style';
 const SuccessfulScreen = () => {
   return (
     <View style={styles.container}>
-      <Image source={require('../../../../assets/images/CheckCircle.png')} />
+      <Image
+        source={require('../../../../assets/images/Common/CheckCircle.png')}
+      />
       <Text style={styles.successful}>Successful!</Text>
       <Text style={styles.info}>Please check your email to confirm!</Text>
     </View>

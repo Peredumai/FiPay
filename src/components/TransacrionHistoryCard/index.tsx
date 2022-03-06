@@ -8,7 +8,7 @@ const TransacrionHistoryCard = () => {
       <View style={styles.container}>
         <View style={styles.row}>
           <Image
-            source={require('../../../../client/assets/images/marketBill.png')}
+            source={require('../../../../client/assets/images/Common/marketBill.png')}
           />
           <View style={styles.textContainer}>
             <Text style={styles.marketText}>Market bills</Text>
@@ -17,7 +17,9 @@ const TransacrionHistoryCard = () => {
         </View>
         <View style={styles.row}>
           <Text style={styles.priceText}>$100.00</Text>
-          <Image source={require('../../../assets/images/arrowRight.png')} />
+          <Image
+            source={require('../../../assets/images/Common/arrowRight.png')}
+          />
         </View>
       </View>
       <View style={styles.line} />

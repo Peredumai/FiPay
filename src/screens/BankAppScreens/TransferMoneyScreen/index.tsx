@@ -12,7 +12,7 @@ import React, {useState} from 'react';
 import styles from './style';
 import Dropdown from './../../../components/DropDown';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import CircleDown from '../../../../assets/images/circleDown.png';
+import CircleDown from '../../../../assets/images/Common/circleDown.png';
 import ContactCard from '../../../components/ContactCard';
 import Button from './../../../components/Button/index';
 

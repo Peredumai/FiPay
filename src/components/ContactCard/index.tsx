@@ -14,7 +14,7 @@ const ContactCard = ({name, phoneNum, img}: IContactCardProps) => {
       <View style={styles.container}>
         <View style={styles.row}>
           <Image
-            source={require('../../../../client/assets/images/avatar.png')}
+            source={require('../../../../client/assets/images/Common/avatar.png')}
           />
           <View style={styles.textContainer}>
             <Text style={styles.marketText}>{name}</Text>
@@ -24,7 +24,7 @@ const ContactCard = ({name, phoneNum, img}: IContactCardProps) => {
         <View>
           <TouchableOpacity>
             <Image
-              source={require('../../../../client/assets/images/submitIcon.png')}
+              source={require('../../../../client/assets/images/Common/submitIcon.png')}
             />
           </TouchableOpacity>
         </View>

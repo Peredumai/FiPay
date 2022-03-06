@@ -6,7 +6,7 @@ import TransacrionHistoryCard from '../../../components/TransacrionHistoryCard';
 import {Dimensions} from 'react-native';
 
 import {LineChart} from 'react-native-chart-kit';
-import ChartLabel from '../../../../assets/images/ChartLabel.svg';
+import ChartLabel from '../../../../assets/images/Common/ChartLabel.svg';
 import {THEME} from '../../../theme';
 
 const ExpensesScreen = () => {

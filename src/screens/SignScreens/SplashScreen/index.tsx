@@ -19,7 +19,7 @@ const SplashScreen = () => {
     <View style={styles.container}>
       <Image
         style={styles.backgroundImage}
-        source={require('../../../../assets/images/Splash.png')}
+        source={require('../../../../assets/images/Common/Splash.png')}
       />
       <View>
         <View>

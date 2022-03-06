@@ -66,13 +66,13 @@ const Tabs = () => {
             headerRight: () => (
               <Image
                 style={styles.iconRight}
-                source={require('../assets/images/searchIcon.png')}
+                source={require('../assets/images/Common/searchIcon.png')}
               />
             ),
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
             tabBarIcon: ({focused}) =>

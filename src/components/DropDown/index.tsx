@@ -3,8 +3,7 @@ import React, {useState} from 'react';
 import {ModalPicker} from '../ModalPicker';
 import styles from './style';
 
-import ExchangeDropDown from '../../../assets/images/exchangeDropDown.png';
-import ArrowDown from '../../../assets/images/arrowDown.png';
+import ExchangeDropDown from '../../../assets/images/Common/exchangeDropDown.svg';
 
 interface IDropDownProps {
   initial: string;
@@ -42,17 +41,13 @@ const Dropdown = ({
         ]}
         onPress={() => changeModalVisibility(!isVisible)}>
         <Text style={[styles.text, text && styles[text]]}>{initial}</Text>
-        <Image
-          source={
-            initial !== ''
-              ? type === 'currencyPicker'
-                ? ExchangeDropDown
-                : null
-              : type === 'currencyPicker'
-              ? ExchangeDropDown
-              : ArrowDown
-          }
-        />
+        {initial !== '' ? (
+          type === 'currencyPicker' ? (
+            <ExchangeDropDown />
+          ) : null
+        ) : type === 'currencyPicker' ? null : (
+          <ExchangeDropDown />
+        )}
       </TouchableOpacity>
 
       <Modal

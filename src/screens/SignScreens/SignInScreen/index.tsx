@@ -17,12 +17,12 @@ import {useNavigation} from '@react-navigation/native';
 
 // import * as LoginApi from '../../../api/login';
 
-import eye from '../../../../assets/images/eye.png';
-import hiddenEye from '../../../../assets/images/hidden_eye.png';
-import errorIcon from '../../../../assets/images/error_icon.png';
-import fiLogo from '../../../../assets/images/fiLogo.png';
-import error from '../../../../assets/images/error.png';
-import succeedIcon from '../../../../assets/images/succeed.png';
+import eye from '../../../../assets/images/Common/eye.png';
+import hiddenEye from '../../../../assets/images/Common/hidden_eye.png';
+import errorIcon from '../../../../assets/images/Common/error_icon.png';
+import fiLogo from '../../../../assets/images/Common/fiLogo.png';
+import error from '../../../../assets/images/Common/error.png';
+import succeedIcon from '../../../../assets/images/Common/succeed.png';
 
 const SignInScreen = () => {
   const [login, setLogin] = useState<string>('');

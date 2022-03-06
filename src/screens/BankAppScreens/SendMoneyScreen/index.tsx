@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import styles from './style';
 
-import searchIcon from '../../../../assets//images/search.png';
+import searchIcon from '../../../../assets//images/Common/search.png';
 import Phone from '../../../../assets//images/SendMoneyIcons/phone.png';
 import Shop from '../../../../assets//images/SendMoneyIcons/shop.png';
 import Wifi from '../../../../assets//images/SendMoneyIcons/wifi.png';

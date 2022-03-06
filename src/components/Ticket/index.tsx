@@ -2,7 +2,7 @@ import {Image, Text, View} from 'react-native';
 import React from 'react';
 import styles from './styles';
 
-import qrCode from '../../../assets/images/qrCode.png';
+import qrCode from '../../../assets/images/Common/qrCode.png';
 
 const Ticket = () => {
   return (

@@ -79,7 +79,7 @@ const StatisticsScreenPieChart = () => {
             onPress={onShowPopup}>
             <Text style={styles.text}>This Week</Text>
             <Image
-              source={require('../../../../assets/images/arrowDropDown.png')}
+              source={require('../../../../assets/images/Common/arrowDropDown.png')}
             />
           </TouchableOpacity>
         </View>

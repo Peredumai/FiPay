@@ -23,7 +23,7 @@ const NotificationPost = ({
       <View style={styles.container}>
         <Image
           style={styles.logoImg}
-          source={require('../../../../client/assets/images/avatar.png')}
+          source={require('../../../../client/assets/images/Common/avatar.png')}
         />
         <View style={styles.message}>
           {type === 'receive' ? (

@@ -64,7 +64,7 @@ const CurrentBalanceScreenReload = () => {
           <View style={styles.row}>
             <Image
               style={styles.icon}
-              source={require('../../../../assets/images/incomeImg.png')}
+              source={require('../../../../assets/images/Common/incomeImg.png')}
             />
             <View>
               <View>
@@ -79,7 +79,7 @@ const CurrentBalanceScreenReload = () => {
           <View style={styles.row}>
             <Image
               style={styles.icon}
-              source={require('../../../../assets/images/expenseImg.png')}
+              source={require('../../../../assets/images/Common/expenseImg.png')}
             />
             <View>
               <View>

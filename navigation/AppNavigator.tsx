@@ -54,6 +54,34 @@ const appNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="CheckExchange"
+          component={CheckExchangeScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ExchangeMoney"
+          component={ExchangeMoneyScreen}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="CreateAccountInfo"
+          component={CreateAccountInfoScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Splash"
+          component={SplashScreen}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen
+          name="SignIn"
+          component={SignInScreen}
+          options={{headerShown: false}}
+        />
+
+        <Stack.Screen
           name="Detail balance"
           component={DetailsScreen}
           options={{
@@ -62,7 +90,7 @@ const appNavigator = () => {
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
           }}
@@ -94,7 +122,7 @@ const appNavigator = () => {
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
           }}
@@ -108,7 +136,7 @@ const appNavigator = () => {
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
           }}
@@ -126,15 +154,10 @@ const appNavigator = () => {
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
           }}
-        />
-        <Stack.Screen
-          name="CheckExchange"
-          component={CheckExchangeScreen}
-          options={{headerShown: false}}
         />
 
         <Stack.Screen
@@ -146,7 +169,7 @@ const appNavigator = () => {
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
           }}
@@ -160,7 +183,7 @@ const appNavigator = () => {
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
           }}
@@ -174,7 +197,7 @@ const appNavigator = () => {
             headerLeft: () => (
               <Image
                 style={styles.iconLeft}
-                source={require('../assets/images/arrowBack.png')}
+                source={require('../assets/images/Common/arrowBack.png')}
               />
             ),
           }}
@@ -224,32 +247,19 @@ const appNavigator = () => {
           component={TransferMoneyScreen}
           options={{headerShown: true, headerShadowVisible: false}}
         />
-        <Stack.Screen
-          name="CreateAccountInfo"
-          component={CreateAccountInfoScreen}
-          options={{headerShown: false}}
-        />
+
         <Stack.Screen
           name="SendMoney"
           component={SendMoneyScreen}
           options={{headerShown: true}}
         />
-        <Stack.Screen
-          name="Splash"
-          component={SplashScreen}
-          options={{headerShown: false}}
-        />
+
         <Stack.Screen
           name="Currency"
           component={CurrencyScreen}
           options={{headerShown: true, headerShadowVisible: false}}
         />
 
-        <Stack.Screen
-          name="ExchangeMoney"
-          component={ExchangeMoneyScreen}
-          options={{headerShown: false}}
-        />
         <Stack.Screen
           name="Link new card2"
           component={LinkNewCardScreen2}
@@ -295,11 +305,6 @@ const appNavigator = () => {
         <Stack.Screen
           name="CreateAccount"
           component={CreateAccountScreen}
-          options={{headerShown: false}}
-        />
-        <Stack.Screen
-          name="SignIn"
-          component={SignInScreen}
           options={{headerShown: false}}
         />
         <Stack.Screen

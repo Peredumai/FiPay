@@ -18,7 +18,7 @@ import F from '../../../../assets/images/LinkNewCardIcons/colors/6.png';
 import G from '../../../../assets/images/LinkNewCardIcons/colors/7.png';
 import H from '../../../../assets/images/LinkNewCardIcons/colors/8.png';
 
-import CalendarIcon from '../../../../assets/images/calendarIcon.png';
+import CalendarIcon from '../../../../assets/images/Common/calendarIcon.png';
 
 const LinkNewCardScreen2 = () => {
   return (

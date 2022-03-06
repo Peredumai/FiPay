@@ -3,7 +3,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import styles from './style';
 
-import ChartLabel from '../../../../assets/images/ChartLabel.svg';
+import ChartLabel from '../../../../assets/images/Common/ChartLabel.svg';
 
 import {Dimensions} from 'react-native';
 

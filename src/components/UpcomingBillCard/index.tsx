@@ -8,7 +8,7 @@ const UpcomingBillCard = () => {
       <View style={styles.container}>
         <View style={styles.row}>
           <Image
-            source={require('../../../../client/assets/images/marketBill.png')}
+            source={require('../../../../client/assets/images/Common/marketBill.png')}
           />
           <View style={styles.textContainer}>
             <Text style={styles.marketText}>Market bills</Text>

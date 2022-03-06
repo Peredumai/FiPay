@@ -1,13 +1,15 @@
 import {View, Text, Image} from 'react-native';
 import React from 'react';
 import styles from './style';
-import FaceAuth from '../../../../assets/images/FaceAuth.svg';
+import FaceAuth from '../../../../assets/images/Common/FaceAuth.svg';
 
 const FaceAuthScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.cameraContainer}>
-        <Image source={require('../../../../assets/images/Camera.png')} />
+        <Image
+          source={require('../../../../assets/images/Common/Camera.png')}
+        />
       </View>
       <View style={styles.innerContainer}>
         <View style={styles.line} />

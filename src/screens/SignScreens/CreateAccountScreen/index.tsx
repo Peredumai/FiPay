@@ -13,11 +13,11 @@ import styles from './style';
 import Button from './../../../components/Button/index';
 import {THEME} from './../../../theme';
 
-import eye from '../../../../assets/images/eye.png';
-import hiddenEye from '../../../../assets/images/hidden_eye.png';
-import errorIcon from '../../../../assets/images/error_icon.png';
-import error from '../../../../assets/images/error.png';
-import succeedIcon from '../../../../assets/images/succeed.png';
+import eye from '../../../../assets/images/Common/eye.png';
+import hiddenEye from '../../../../assets/images/Common/hidden_eye.png';
+import errorIcon from '../../../../assets/images/Common/error_icon.png';
+import error from '../../../../assets/images/Common/error.png';
+import succeedIcon from '../../../../assets/images/Common/succeed.png';
 import {useNavigation} from '@react-navigation/native';
 
 const CreateAccountScreen = props => {
@@ -161,7 +161,7 @@ const CreateAccountScreen = props => {
     <View style={styles.container}>
       <Image
         style={styles.logoImage}
-        source={require('../../../../assets/images/fiLogo.png')}
+        source={require('../../../../assets/images/Common/fiLogo.png')}
       />
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.innerContainer}>

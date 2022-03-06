@@ -2,13 +2,13 @@ import {Image, Text, TouchableOpacity, View} from 'react-native';
 import React, {useState} from 'react';
 import styles from './style';
 
-import CircleDown from '../../../../assets/images/circleDown.png';
+import CircleDown from '../../../../assets/images/Common/circleDown.png';
 import Dropdown from '../../../components/DropDown';
+
 
 const ExchangeMoneyScreen = () => {
   const [fromCurrencyValue, setFromCurrencyValue] = useState('USD');
   const [toCurrencyValue, setToCurrencyValue] = useState('EUR');
-  // const [countryValue, setCountryValue] = useState('Ukraine');
 
   return (
     <View style={styles.container}>
@@ -18,19 +18,15 @@ const ExchangeMoneyScreen = () => {
             <Text style={styles.label}>From</Text>
           </View>
           <View style={styles.row}>
-            <View style={styles.row}>
-              <TouchableOpacity style={styles.row}>
-                {/* <Text style={styles.currency}>USD</Text> */}
-                <Dropdown
-                  text={'currencyText'}
-                  type={'currencyPicker'}
-                  initial={fromCurrencyValue}
-                  change={setFromCurrencyValue}
-                  isHalfWidth={false}
-                />
-                {/* <Image source={ExchangeDropDown} /> */}
-              </TouchableOpacity>
-            </View>
+            <TouchableOpacity style={styles.rowNear}>
+              <Dropdown
+                text={'currencyText'}
+                type={'currencyPicker'}
+                initial={fromCurrencyValue}
+                change={setFromCurrencyValue}
+                isHalfWidth={true}
+              />
+            </TouchableOpacity>
             <View>
               <Text style={styles.price}>$199</Text>
             </View>
@@ -43,13 +39,13 @@ const ExchangeMoneyScreen = () => {
           </View>
           <View style={styles.row}>
             <View style={styles.row}>
-              <TouchableOpacity style={styles.row}>
+              <TouchableOpacity style={styles.rowNear}>
                 <Dropdown
                   text={'currencyText'}
                   type={'currencyPicker'}
-                  initial={toCurrencyValue}
-                  change={setToCurrencyValue}
-                  isHalfWidth={false}
+                  initial={fromCurrencyValue}
+                  change={setFromCurrencyValue}
+                  isHalfWidth={true}
                 />
               </TouchableOpacity>
             </View>

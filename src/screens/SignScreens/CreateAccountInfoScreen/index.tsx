@@ -10,7 +10,7 @@ import React, {useState} from 'react';
 import styles from './style';
 import Button from './../../../components/Button/index';
 import Dropdown from './../../../components/DropDown';
-import logo from '../../../../assets/images/fiLogo.png';
+import logo from '../../../../assets/images/Common/fiLogo.png';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 const CreateAccountInfoScreen = () => {
@@ -55,9 +55,6 @@ const CreateAccountInfoScreen = () => {
                     State<Text style={styles.required}>*</Text>
                   </Text>
                   <View style={[styles.inputContainer, styles.rowContainer]}>
-                    {/* {!stateValue && (
-                      <Image style={styles.stateIcon} source={arrowDown} />
-                    )} */}
                     <Dropdown
                       initial={stateValue}
                       change={setStateValue}

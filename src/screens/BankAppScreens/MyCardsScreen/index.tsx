@@ -4,8 +4,8 @@ import styles from './style';
 import Card from './../../../components/Card/index';
 import Button from './../../../components/Button/index';
 
-import SimpleCard from '../../../../assets/images/Card.png';
-import RedCard from '../../../../assets/images/CardRed.png';
+import SimpleCard from '../../../../assets/images/Common/Card.png';
+import RedCard from '../../../../assets/images/Common/CardRed.png';
 
 const MyCardsScreen = () => {
   return (

@@ -2,7 +2,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import styles from './styles';
 
-import Calendar from '../../../assets/images/calendar.svg';
+import Calendar from '../../../assets/images/Common/calendar.svg';
 import Button from '../Button';
 
 const Filter = () => {

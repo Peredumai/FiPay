@@ -20,8 +20,8 @@ interface IRenderItem {
 
 const win = Dimensions.get('window');
 
-import CardImage from '../../../../assets/images/Card.png';
-import CardRedImage from '../../../../assets/images/CardRed.png';
+import CardImage from '../../../../assets/images/Common/Card.png';
+import CardRedImage from '../../../../assets/images/Common/CardRed.png';
 
 const cards = [
   {
@@ -67,7 +67,9 @@ const HomeScreen = () => {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerText}>Good morning, John!</Text>
-        <Image source={require('../../../../assets/images/history.png')} />
+        <Image
+          source={require('../../../../assets/images/Common/history.png')}
+        />
       </View>
 
       <View style={styles.wrap}>

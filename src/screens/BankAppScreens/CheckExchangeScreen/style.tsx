@@ -32,6 +32,10 @@ const styles = EStyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  rowNear: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   label: {
     color: '#858C94',
     fontSize: '1rem',
