@@ -20,6 +20,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <Tabs />
+      {/* <AppNavigator /> */}
     </Provider>
   );
 };

@@ -54,6 +54,11 @@ const appNavigator = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
+          name="StatisticsPieChart"
+          component={StatisticsScreenPieChart}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
           name="CheckExchange"
           component={CheckExchangeScreen}
           options={{headerShown: false}}
@@ -207,11 +212,7 @@ const appNavigator = () => {
           component={CurrentBalanceScreenReload}
           options={{headerShown: false}}
         />
-        <Stack.Screen
-          name="StatisticsPieChart"
-          component={StatisticsScreenPieChart}
-          options={{headerShown: false}}
-        />
+
         <Stack.Screen
           name="Statistics"
           component={StatisticsScreen}

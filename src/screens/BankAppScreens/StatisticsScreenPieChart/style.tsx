@@ -7,6 +7,7 @@ const win = Dimensions.get('window');
 const styles = EStyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#ffffff',
   },
   purpleBackground: {
     height: '17.5rem',
